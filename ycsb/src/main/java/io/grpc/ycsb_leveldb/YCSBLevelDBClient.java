@@ -35,52 +35,12 @@ public class YCSBLevelDBClient {
   public void shutdown() throws InterruptedException {
     channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);
   }
-  public int byteToint(byte[] arr){
-	  return (arr[0] & 0xff)<<24 | (arr[1] & 0xff)<<16 |
-		  (arr[2] & 0xff)<<8 | (arr[3] & 0xff);
-  }
 
-  private byte[] serialize(HashMap<String, String> values) {
-	  ByteBuffer buf = ByteBuffer.allocate(BYTE_BUFFER_SIZE);
-	  System.out.println("[s](byte) values.size() // " + (byte) values.size());
-	  buf.put((byte) values.size());
-	  for (Map.Entry<String, String> entry : values.entrySet()) {
-		  buf.put((byte) entry.getKey().length());
-		  buf.put(entry.getKey().getBytes());
-		  buf.put((byte) entry.getValue().length());
-		  buf.put((entry.getValue().getBytes()));
-	  }
-	  System.out.println("[s]buf.position() // " + buf.array());
-	  byte[] result = new byte[buf.position()];
-	  buf.get(result,0,buf.position());
-	  System.out.println("[s]result.length // " + result.length);
-	  return result;
-  }
-
-  private HashMap<String, String> deserialize(byte[] bytes) {
-	  HashMap<String, String> result = new HashMap<String, String>();
-	  System.out.println("[d]bytes.length // " + bytes.length);
-	  ByteBuffer buf = ByteBuffer.allocate(BYTE_BUFFER_SIZE);
-	  buf.get(bytes);
-	  System.out.println("[d]buf.position() // " + buf.array());
-//	  int count = buf.getInt();
-	  byte[] cnt = new byte[4];
-	  buf.get(cnt, 0, 4);
-	  int count = byteToint(cnt);	  
-	  System.out.println("[d]count // " + cnt[0]);
-	  for (int i = 0; i < count; i++) {
-		  int keyLength = buf.getInt();
-		  byte[] keyBytes = new byte[keyLength];
-		  buf.get(keyBytes, buf.position(), keyLength);
-
-		  int valueLength = buf.getInt();
-		  byte[] valueBytes = new byte[valueLength];
-		  buf.get(valueBytes, buf.position(), valueLength);
-
-		  result.put(new String(keyBytes,0,keyBytes.length), new String(valueBytes,0,valueBytes.length));
-	  }
-	  System.out.println("[d]result.size // " + result.size());
-	  return result;
+  private String serialize(HashMap<String,String> values) {
+	String result = "";
+	int valueSize = values.size();
+	System.out.println("[s] int : "+ valueSize + ", String : " + Integer.toString(valueSize).length());
+	return result;
   }
 
   public void init() throws DBException {
@@ -127,11 +87,7 @@ public class YCSBLevelDBClient {
 
   public int insert(String table, String key, HashMap<String,String> values) {
 	System.out.println(values.values());
-	byte[] serialized = serialize(values);
-	HashMap<String,String> de = new HashMap<String,String>();
-	de = deserialize(serialized);
-	System.out.println(de.size());
-	ByteString hash = ByteString.copyFrom(serialized);
+	String hash = serialize(values);
 	InsertM request = InsertM.newBuilder().setTable(table).setKey(key).setHash(hash).build();
     Result response;
     try {
@@ -161,7 +117,7 @@ public class YCSBLevelDBClient {
 	values.put("k2","v2");
 	values.put("k3","v3");
     try {
-      client.insert("table", "key2", values);
+      client.insert("table", "key3", values);
     } finally {
       client.shutdown();
     }
