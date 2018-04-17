@@ -28,6 +28,8 @@ dependencies {
   compile "io.grpc:grpc-netty:${grpcVersion}"
   compile "io.grpc:grpc-protobuf:${grpcVersion}"
   compile "io.grpc:grpc-stub:${grpcVersion}"
+  compile "com.googlecode.json-simple:json-simple:1.1.1"
+  compile group: 'com.yahoo.ycsb', name: 'core', version: '0.1.4'
 }
 
 protobuf {

@@ -17,7 +17,7 @@ public  final class InsertM extends
   private InsertM() {
     table_ = "";
     key_ = "";
-    values_ = "";
+    hash_ = com.google.protobuf.ByteString.EMPTY;
   }
 
   @java.lang.Override
@@ -58,9 +58,8 @@ public  final class InsertM extends
             break;
           }
           case 26: {
-            java.lang.String s = input.readStringRequireUtf8();
 
-            values_ = s;
+            hash_ = input.readBytes();
             break;
           }
         }
@@ -154,38 +153,13 @@ public  final class InsertM extends
     }
   }
 
-  public static final int VALUES_FIELD_NUMBER = 3;
-  private volatile java.lang.Object values_;
+  public static final int HASH_FIELD_NUMBER = 3;
+  private com.google.protobuf.ByteString hash_;
   /**
-   * <code>optional string values = 3;</code>
+   * <code>optional bytes hash = 3;</code>
    */
-  public java.lang.String getValues() {
-    java.lang.Object ref = values_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      values_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>optional string values = 3;</code>
-   */
-  public com.google.protobuf.ByteString
-      getValuesBytes() {
-    java.lang.Object ref = values_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      values_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public com.google.protobuf.ByteString getHash() {
+    return hash_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -206,8 +180,8 @@ public  final class InsertM extends
     if (!getKeyBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 2, key_);
     }
-    if (!getValuesBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 3, values_);
+    if (!hash_.isEmpty()) {
+      output.writeBytes(3, hash_);
     }
   }
 
@@ -222,8 +196,9 @@ public  final class InsertM extends
     if (!getKeyBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, key_);
     }
-    if (!getValuesBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, values_);
+    if (!hash_.isEmpty()) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBytesSize(3, hash_);
     }
     memoizedSize = size;
     return size;
@@ -245,8 +220,8 @@ public  final class InsertM extends
         .equals(other.getTable());
     result = result && getKey()
         .equals(other.getKey());
-    result = result && getValues()
-        .equals(other.getValues());
+    result = result && getHash()
+        .equals(other.getHash());
     return result;
   }
 
@@ -261,8 +236,8 @@ public  final class InsertM extends
     hash = (53 * hash) + getTable().hashCode();
     hash = (37 * hash) + KEY_FIELD_NUMBER;
     hash = (53 * hash) + getKey().hashCode();
-    hash = (37 * hash) + VALUES_FIELD_NUMBER;
-    hash = (53 * hash) + getValues().hashCode();
+    hash = (37 * hash) + HASH_FIELD_NUMBER;
+    hash = (53 * hash) + getHash().hashCode();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -385,7 +360,7 @@ public  final class InsertM extends
 
       key_ = "";
 
-      values_ = "";
+      hash_ = com.google.protobuf.ByteString.EMPTY;
 
       return this;
     }
@@ -411,7 +386,7 @@ public  final class InsertM extends
       io.grpc.ycsb_leveldb.InsertM result = new io.grpc.ycsb_leveldb.InsertM(this);
       result.table_ = table_;
       result.key_ = key_;
-      result.values_ = values_;
+      result.hash_ = hash_;
       onBuilt();
       return result;
     }
@@ -461,9 +436,8 @@ public  final class InsertM extends
         key_ = other.key_;
         onChanged();
       }
-      if (!other.getValues().isEmpty()) {
-        values_ = other.values_;
-        onChanged();
+      if (other.getHash() != com.google.protobuf.ByteString.EMPTY) {
+        setHash(other.getHash());
       }
       onChanged();
       return this;
@@ -629,71 +603,31 @@ public  final class InsertM extends
       return this;
     }
 
-    private java.lang.Object values_ = "";
+    private com.google.protobuf.ByteString hash_ = com.google.protobuf.ByteString.EMPTY;
     /**
-     * <code>optional string values = 3;</code>
+     * <code>optional bytes hash = 3;</code>
      */
-    public java.lang.String getValues() {
-      java.lang.Object ref = values_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        values_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+    public com.google.protobuf.ByteString getHash() {
+      return hash_;
     }
     /**
-     * <code>optional string values = 3;</code>
+     * <code>optional bytes hash = 3;</code>
      */
-    public com.google.protobuf.ByteString
-        getValuesBytes() {
-      java.lang.Object ref = values_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        values_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>optional string values = 3;</code>
-     */
-    public Builder setValues(
-        java.lang.String value) {
+    public Builder setHash(com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      values_ = value;
+      hash_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string values = 3;</code>
+     * <code>optional bytes hash = 3;</code>
      */
-    public Builder clearValues() {
+    public Builder clearHash() {
       
-      values_ = getDefaultInstance().getValues();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string values = 3;</code>
-     */
-    public Builder setValuesBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      values_ = value;
+      hash_ = getDefaultInstance().getHash();
       onChanged();
       return this;
     }

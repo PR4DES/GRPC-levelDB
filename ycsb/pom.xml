@@ -28,6 +28,17 @@
       <artifactId>grpc-stub</artifactId>
       <version>${grpc.version}</version>
     </dependency>
+	<dependency>
+	  <groupId>com.yahoo.ycsb</groupId>
+	  <artifactId>core</artifactId>
+	  <version>${project.version}</version>
+	  <scope>proided</scope>
+	</dependency>
+	<dependency>
+	  <groupId>com.googlecode.json-simple</groupId>
+	  <artifactId>json-simple</artifactId>
+	  <version>1.1</version>
+	</dependency>
   </dependencies>
   <build>
     <extensions>
