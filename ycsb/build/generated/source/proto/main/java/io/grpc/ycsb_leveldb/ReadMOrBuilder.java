@@ -26,14 +26,4 @@ public interface ReadMOrBuilder extends
    */
   com.google.protobuf.ByteString
       getKeyBytes();
-
-  /**
-   * <code>optional string field = 3;</code>
-   */
-  java.lang.String getField();
-  /**
-   * <code>optional string field = 3;</code>
-   */
-  com.google.protobuf.ByteString
-      getFieldBytes();
 }

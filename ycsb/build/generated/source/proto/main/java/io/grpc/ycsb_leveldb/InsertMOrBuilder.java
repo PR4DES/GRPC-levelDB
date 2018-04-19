@@ -28,12 +28,12 @@ public interface InsertMOrBuilder extends
       getKeyBytes();
 
   /**
-   * <code>optional string hash = 3;</code>
+   * <code>optional string values = 3;</code>
    */
-  java.lang.String getHash();
+  java.lang.String getValues();
   /**
-   * <code>optional string hash = 3;</code>
+   * <code>optional string values = 3;</code>
    */
   com.google.protobuf.ByteString
-      getHashBytes();
+      getValuesBytes();
 }

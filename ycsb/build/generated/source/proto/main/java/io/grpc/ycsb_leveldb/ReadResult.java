@@ -4,19 +4,19 @@
 package io.grpc.ycsb_leveldb;
 
 /**
- * Protobuf type {@code ycsbleveldb.ReadM}
+ * Protobuf type {@code ycsbleveldb.ReadResult}
  */
-public  final class ReadM extends
+public  final class ReadResult extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:ycsbleveldb.ReadM)
-    ReadMOrBuilder {
-  // Use ReadM.newBuilder() to construct.
-  private ReadM(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // @@protoc_insertion_point(message_implements:ycsbleveldb.ReadResult)
+    ReadResultOrBuilder {
+  // Use ReadResult.newBuilder() to construct.
+  private ReadResult(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private ReadM() {
-    table_ = "";
-    key_ = "";
+  private ReadResult() {
+    output_ = "";
+    result_ = 0;
   }
 
   @java.lang.Override
@@ -24,7 +24,7 @@ public  final class ReadM extends
   getUnknownFields() {
     return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
   }
-  private ReadM(
+  private ReadResult(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -47,13 +47,12 @@ public  final class ReadM extends
           case 10: {
             java.lang.String s = input.readStringRequireUtf8();
 
-            table_ = s;
+            output_ = s;
             break;
           }
-          case 18: {
-            java.lang.String s = input.readStringRequireUtf8();
+          case 16: {
 
-            key_ = s;
+            result_ = input.readInt32();
             break;
           }
         }
@@ -69,82 +68,57 @@ public  final class ReadM extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadM_descriptor;
+    return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadResult_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadM_fieldAccessorTable
+    return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadResult_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            io.grpc.ycsb_leveldb.ReadM.class, io.grpc.ycsb_leveldb.ReadM.Builder.class);
+            io.grpc.ycsb_leveldb.ReadResult.class, io.grpc.ycsb_leveldb.ReadResult.Builder.class);
   }
 
-  public static final int TABLE_FIELD_NUMBER = 1;
-  private volatile java.lang.Object table_;
+  public static final int OUTPUT_FIELD_NUMBER = 1;
+  private volatile java.lang.Object output_;
   /**
-   * <code>optional string table = 1;</code>
+   * <code>optional string output = 1;</code>
    */
-  public java.lang.String getTable() {
-    java.lang.Object ref = table_;
+  public java.lang.String getOutput() {
+    java.lang.Object ref = output_;
     if (ref instanceof java.lang.String) {
       return (java.lang.String) ref;
     } else {
       com.google.protobuf.ByteString bs = 
           (com.google.protobuf.ByteString) ref;
       java.lang.String s = bs.toStringUtf8();
-      table_ = s;
+      output_ = s;
       return s;
     }
   }
   /**
-   * <code>optional string table = 1;</code>
+   * <code>optional string output = 1;</code>
    */
   public com.google.protobuf.ByteString
-      getTableBytes() {
-    java.lang.Object ref = table_;
+      getOutputBytes() {
+    java.lang.Object ref = output_;
     if (ref instanceof java.lang.String) {
       com.google.protobuf.ByteString b = 
           com.google.protobuf.ByteString.copyFromUtf8(
               (java.lang.String) ref);
-      table_ = b;
+      output_ = b;
       return b;
     } else {
       return (com.google.protobuf.ByteString) ref;
     }
   }
 
-  public static final int KEY_FIELD_NUMBER = 2;
-  private volatile java.lang.Object key_;
+  public static final int RESULT_FIELD_NUMBER = 2;
+  private int result_;
   /**
-   * <code>optional string key = 2;</code>
+   * <code>optional int32 result = 2;</code>
    */
-  public java.lang.String getKey() {
-    java.lang.Object ref = key_;
-    if (ref instanceof java.lang.String) {
-      return (java.lang.String) ref;
-    } else {
-      com.google.protobuf.ByteString bs = 
-          (com.google.protobuf.ByteString) ref;
-      java.lang.String s = bs.toStringUtf8();
-      key_ = s;
-      return s;
-    }
-  }
-  /**
-   * <code>optional string key = 2;</code>
-   */
-  public com.google.protobuf.ByteString
-      getKeyBytes() {
-    java.lang.Object ref = key_;
-    if (ref instanceof java.lang.String) {
-      com.google.protobuf.ByteString b = 
-          com.google.protobuf.ByteString.copyFromUtf8(
-              (java.lang.String) ref);
-      key_ = b;
-      return b;
-    } else {
-      return (com.google.protobuf.ByteString) ref;
-    }
+  public int getResult() {
+    return result_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -159,11 +133,11 @@ public  final class ReadM extends
 
   public void writeTo(com.google.protobuf.CodedOutputStream output)
                       throws java.io.IOException {
-    if (!getTableBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, table_);
+    if (!getOutputBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 1, output_);
     }
-    if (!getKeyBytes().isEmpty()) {
-      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, key_);
+    if (result_ != 0) {
+      output.writeInt32(2, result_);
     }
   }
 
@@ -172,11 +146,12 @@ public  final class ReadM extends
     if (size != -1) return size;
 
     size = 0;
-    if (!getTableBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, table_);
+    if (!getOutputBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, output_);
     }
-    if (!getKeyBytes().isEmpty()) {
-      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, key_);
+    if (result_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(2, result_);
     }
     memoizedSize = size;
     return size;
@@ -188,16 +163,16 @@ public  final class ReadM extends
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof io.grpc.ycsb_leveldb.ReadM)) {
+    if (!(obj instanceof io.grpc.ycsb_leveldb.ReadResult)) {
       return super.equals(obj);
     }
-    io.grpc.ycsb_leveldb.ReadM other = (io.grpc.ycsb_leveldb.ReadM) obj;
+    io.grpc.ycsb_leveldb.ReadResult other = (io.grpc.ycsb_leveldb.ReadResult) obj;
 
     boolean result = true;
-    result = result && getTable()
-        .equals(other.getTable());
-    result = result && getKey()
-        .equals(other.getKey());
+    result = result && getOutput()
+        .equals(other.getOutput());
+    result = result && (getResult()
+        == other.getResult());
     return result;
   }
 
@@ -208,67 +183,67 @@ public  final class ReadM extends
     }
     int hash = 41;
     hash = (19 * hash) + getDescriptorForType().hashCode();
-    hash = (37 * hash) + TABLE_FIELD_NUMBER;
-    hash = (53 * hash) + getTable().hashCode();
-    hash = (37 * hash) + KEY_FIELD_NUMBER;
-    hash = (53 * hash) + getKey().hashCode();
+    hash = (37 * hash) + OUTPUT_FIELD_NUMBER;
+    hash = (53 * hash) + getOutput().hashCode();
+    hash = (37 * hash) + RESULT_FIELD_NUMBER;
+    hash = (53 * hash) + getResult();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(byte[] data)
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(java.io.InputStream input)
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseDelimitedFrom(java.io.InputStream input)
+  public static io.grpc.ycsb_leveldb.ReadResult parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseDelimitedFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static io.grpc.ycsb_leveldb.ReadM parseFrom(
+  public static io.grpc.ycsb_leveldb.ReadResult parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -280,7 +255,7 @@ public  final class ReadM extends
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(io.grpc.ycsb_leveldb.ReadM prototype) {
+  public static Builder newBuilder(io.grpc.ycsb_leveldb.ReadResult prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -295,25 +270,25 @@ public  final class ReadM extends
     return builder;
   }
   /**
-   * Protobuf type {@code ycsbleveldb.ReadM}
+   * Protobuf type {@code ycsbleveldb.ReadResult}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:ycsbleveldb.ReadM)
-      io.grpc.ycsb_leveldb.ReadMOrBuilder {
+      // @@protoc_insertion_point(builder_implements:ycsbleveldb.ReadResult)
+      io.grpc.ycsb_leveldb.ReadResultOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadM_descriptor;
+      return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadResult_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadM_fieldAccessorTable
+      return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadResult_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              io.grpc.ycsb_leveldb.ReadM.class, io.grpc.ycsb_leveldb.ReadM.Builder.class);
+              io.grpc.ycsb_leveldb.ReadResult.class, io.grpc.ycsb_leveldb.ReadResult.Builder.class);
     }
 
-    // Construct using io.grpc.ycsb_leveldb.ReadM.newBuilder()
+    // Construct using io.grpc.ycsb_leveldb.ReadResult.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -330,34 +305,34 @@ public  final class ReadM extends
     }
     public Builder clear() {
       super.clear();
-      table_ = "";
+      output_ = "";
 
-      key_ = "";
+      result_ = 0;
 
       return this;
     }
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadM_descriptor;
+      return io.grpc.ycsb_leveldb.YCSBLeveDB.internal_static_ycsbleveldb_ReadResult_descriptor;
     }
 
-    public io.grpc.ycsb_leveldb.ReadM getDefaultInstanceForType() {
-      return io.grpc.ycsb_leveldb.ReadM.getDefaultInstance();
+    public io.grpc.ycsb_leveldb.ReadResult getDefaultInstanceForType() {
+      return io.grpc.ycsb_leveldb.ReadResult.getDefaultInstance();
     }
 
-    public io.grpc.ycsb_leveldb.ReadM build() {
-      io.grpc.ycsb_leveldb.ReadM result = buildPartial();
+    public io.grpc.ycsb_leveldb.ReadResult build() {
+      io.grpc.ycsb_leveldb.ReadResult result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public io.grpc.ycsb_leveldb.ReadM buildPartial() {
-      io.grpc.ycsb_leveldb.ReadM result = new io.grpc.ycsb_leveldb.ReadM(this);
-      result.table_ = table_;
-      result.key_ = key_;
+    public io.grpc.ycsb_leveldb.ReadResult buildPartial() {
+      io.grpc.ycsb_leveldb.ReadResult result = new io.grpc.ycsb_leveldb.ReadResult(this);
+      result.output_ = output_;
+      result.result_ = result_;
       onBuilt();
       return result;
     }
@@ -389,23 +364,22 @@ public  final class ReadM extends
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof io.grpc.ycsb_leveldb.ReadM) {
-        return mergeFrom((io.grpc.ycsb_leveldb.ReadM)other);
+      if (other instanceof io.grpc.ycsb_leveldb.ReadResult) {
+        return mergeFrom((io.grpc.ycsb_leveldb.ReadResult)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(io.grpc.ycsb_leveldb.ReadM other) {
-      if (other == io.grpc.ycsb_leveldb.ReadM.getDefaultInstance()) return this;
-      if (!other.getTable().isEmpty()) {
-        table_ = other.table_;
+    public Builder mergeFrom(io.grpc.ycsb_leveldb.ReadResult other) {
+      if (other == io.grpc.ycsb_leveldb.ReadResult.getDefaultInstance()) return this;
+      if (!other.getOutput().isEmpty()) {
+        output_ = other.output_;
         onChanged();
       }
-      if (!other.getKey().isEmpty()) {
-        key_ = other.key_;
-        onChanged();
+      if (other.getResult() != 0) {
+        setResult(other.getResult());
       }
       onChanged();
       return this;
@@ -419,11 +393,11 @@ public  final class ReadM extends
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      io.grpc.ycsb_leveldb.ReadM parsedMessage = null;
+      io.grpc.ycsb_leveldb.ReadResult parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (io.grpc.ycsb_leveldb.ReadM) e.getUnfinishedMessage();
+        parsedMessage = (io.grpc.ycsb_leveldb.ReadResult) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -433,140 +407,97 @@ public  final class ReadM extends
       return this;
     }
 
-    private java.lang.Object table_ = "";
+    private java.lang.Object output_ = "";
     /**
-     * <code>optional string table = 1;</code>
+     * <code>optional string output = 1;</code>
      */
-    public java.lang.String getTable() {
-      java.lang.Object ref = table_;
+    public java.lang.String getOutput() {
+      java.lang.Object ref = output_;
       if (!(ref instanceof java.lang.String)) {
         com.google.protobuf.ByteString bs =
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        table_ = s;
+        output_ = s;
         return s;
       } else {
         return (java.lang.String) ref;
       }
     }
     /**
-     * <code>optional string table = 1;</code>
+     * <code>optional string output = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getTableBytes() {
-      java.lang.Object ref = table_;
+        getOutputBytes() {
+      java.lang.Object ref = output_;
       if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        table_ = b;
+        output_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
     /**
-     * <code>optional string table = 1;</code>
+     * <code>optional string output = 1;</code>
      */
-    public Builder setTable(
+    public Builder setOutput(
         java.lang.String value) {
       if (value == null) {
     throw new NullPointerException();
   }
   
-      table_ = value;
+      output_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string table = 1;</code>
+     * <code>optional string output = 1;</code>
      */
-    public Builder clearTable() {
+    public Builder clearOutput() {
       
-      table_ = getDefaultInstance().getTable();
+      output_ = getDefaultInstance().getOutput();
       onChanged();
       return this;
     }
     /**
-     * <code>optional string table = 1;</code>
+     * <code>optional string output = 1;</code>
      */
-    public Builder setTableBytes(
+    public Builder setOutputBytes(
         com.google.protobuf.ByteString value) {
       if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
       
-      table_ = value;
+      output_ = value;
       onChanged();
       return this;
     }
 
-    private java.lang.Object key_ = "";
+    private int result_ ;
     /**
-     * <code>optional string key = 2;</code>
+     * <code>optional int32 result = 2;</code>
      */
-    public java.lang.String getKey() {
-      java.lang.Object ref = key_;
-      if (!(ref instanceof java.lang.String)) {
-        com.google.protobuf.ByteString bs =
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        key_ = s;
-        return s;
-      } else {
-        return (java.lang.String) ref;
-      }
+    public int getResult() {
+      return result_;
     }
     /**
-     * <code>optional string key = 2;</code>
+     * <code>optional int32 result = 2;</code>
      */
-    public com.google.protobuf.ByteString
-        getKeyBytes() {
-      java.lang.Object ref = key_;
-      if (ref instanceof String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        key_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-    /**
-     * <code>optional string key = 2;</code>
-     */
-    public Builder setKey(
-        java.lang.String value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  
-      key_ = value;
+    public Builder setResult(int value) {
+      
+      result_ = value;
       onChanged();
       return this;
     }
     /**
-     * <code>optional string key = 2;</code>
+     * <code>optional int32 result = 2;</code>
      */
-    public Builder clearKey() {
+    public Builder clearResult() {
       
-      key_ = getDefaultInstance().getKey();
-      onChanged();
-      return this;
-    }
-    /**
-     * <code>optional string key = 2;</code>
-     */
-    public Builder setKeyBytes(
-        com.google.protobuf.ByteString value) {
-      if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-      
-      key_ = value;
+      result_ = 0;
       onChanged();
       return this;
     }
@@ -581,39 +512,39 @@ public  final class ReadM extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:ycsbleveldb.ReadM)
+    // @@protoc_insertion_point(builder_scope:ycsbleveldb.ReadResult)
   }
 
-  // @@protoc_insertion_point(class_scope:ycsbleveldb.ReadM)
-  private static final io.grpc.ycsb_leveldb.ReadM DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:ycsbleveldb.ReadResult)
+  private static final io.grpc.ycsb_leveldb.ReadResult DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new io.grpc.ycsb_leveldb.ReadM();
+    DEFAULT_INSTANCE = new io.grpc.ycsb_leveldb.ReadResult();
   }
 
-  public static io.grpc.ycsb_leveldb.ReadM getDefaultInstance() {
+  public static io.grpc.ycsb_leveldb.ReadResult getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<ReadM>
-      PARSER = new com.google.protobuf.AbstractParser<ReadM>() {
-    public ReadM parsePartialFrom(
+  private static final com.google.protobuf.Parser<ReadResult>
+      PARSER = new com.google.protobuf.AbstractParser<ReadResult>() {
+    public ReadResult parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ReadM(input, extensionRegistry);
+        return new ReadResult(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<ReadM> parser() {
+  public static com.google.protobuf.Parser<ReadResult> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<ReadM> getParserForType() {
+  public com.google.protobuf.Parser<ReadResult> getParserForType() {
     return PARSER;
   }
 
-  public io.grpc.ycsb_leveldb.ReadM getDefaultInstanceForType() {
+  public io.grpc.ycsb_leveldb.ReadResult getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

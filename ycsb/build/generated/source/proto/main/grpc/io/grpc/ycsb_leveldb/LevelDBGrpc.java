@@ -29,13 +29,13 @@ public class LevelDBGrpc {
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<io.grpc.ycsb_leveldb.ReadM,
-      io.grpc.ycsb_leveldb.Result> METHOD_READ =
+      io.grpc.ycsb_leveldb.ReadResult> METHOD_READ =
       io.grpc.MethodDescriptor.create(
           io.grpc.MethodDescriptor.MethodType.UNARY,
           generateFullMethodName(
               "ycsbleveldb.LevelDB", "Read"),
           io.grpc.protobuf.ProtoUtils.marshaller(io.grpc.ycsb_leveldb.ReadM.getDefaultInstance()),
-          io.grpc.protobuf.ProtoUtils.marshaller(io.grpc.ycsb_leveldb.Result.getDefaultInstance()));
+          io.grpc.protobuf.ProtoUtils.marshaller(io.grpc.ycsb_leveldb.ReadResult.getDefaultInstance()));
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   public static final io.grpc.MethodDescriptor<io.grpc.ycsb_leveldb.ScanM,
       io.grpc.ycsb_leveldb.Result> METHOD_SCAN =
@@ -103,7 +103,7 @@ public class LevelDBGrpc {
     /**
      */
     public void read(io.grpc.ycsb_leveldb.ReadM request,
-        io.grpc.stub.StreamObserver<io.grpc.ycsb_leveldb.Result> responseObserver) {
+        io.grpc.stub.StreamObserver<io.grpc.ycsb_leveldb.ReadResult> responseObserver) {
       asyncUnimplementedUnaryCall(METHOD_READ, responseObserver);
     }
 
@@ -142,7 +142,7 @@ public class LevelDBGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 io.grpc.ycsb_leveldb.ReadM,
-                io.grpc.ycsb_leveldb.Result>(
+                io.grpc.ycsb_leveldb.ReadResult>(
                   this, METHODID_READ)))
           .addMethod(
             METHOD_SCAN,
@@ -197,7 +197,7 @@ public class LevelDBGrpc {
     /**
      */
     public void read(io.grpc.ycsb_leveldb.ReadM request,
-        io.grpc.stub.StreamObserver<io.grpc.ycsb_leveldb.Result> responseObserver) {
+        io.grpc.stub.StreamObserver<io.grpc.ycsb_leveldb.ReadResult> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(METHOD_READ, getCallOptions()), request, responseObserver);
     }
@@ -255,7 +255,7 @@ public class LevelDBGrpc {
 
     /**
      */
-    public io.grpc.ycsb_leveldb.Result read(io.grpc.ycsb_leveldb.ReadM request) {
+    public io.grpc.ycsb_leveldb.ReadResult read(io.grpc.ycsb_leveldb.ReadM request) {
       return blockingUnaryCall(
           getChannel(), METHOD_READ, getCallOptions(), request);
     }
@@ -309,7 +309,7 @@ public class LevelDBGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<io.grpc.ycsb_leveldb.Result> read(
+    public com.google.common.util.concurrent.ListenableFuture<io.grpc.ycsb_leveldb.ReadResult> read(
         io.grpc.ycsb_leveldb.ReadM request) {
       return futureUnaryCall(
           getChannel().newCall(METHOD_READ, getCallOptions()), request);
@@ -373,7 +373,7 @@ public class LevelDBGrpc {
       switch (methodId) {
         case METHODID_READ:
           serviceImpl.read((io.grpc.ycsb_leveldb.ReadM) request,
-              (io.grpc.stub.StreamObserver<io.grpc.ycsb_leveldb.Result>) responseObserver);
+              (io.grpc.stub.StreamObserver<io.grpc.ycsb_leveldb.ReadResult>) responseObserver);
           break;
         case METHODID_SCAN:
           serviceImpl.scan((io.grpc.ycsb_leveldb.ScanM) request,
