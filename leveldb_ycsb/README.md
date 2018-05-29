@@ -3,9 +3,17 @@ build
 $ ./gradlew installDist
 ```
 
-run
+IN YCSB
+
+build database binding
 ```
-$ ./build/install/examples/bin/ycsb-leveldb-client
+$ mvn -pl com.yahoo.ycsb:leveldb-binding -am clean package
+```
+
+run ycsb
+```
+$ bin/ycsb.sh load leveldb -P workloads/workloada
+$ bin/ycsb.sh run leveldb -P workloads/workloada
 ```
 
 java file is here : src/main/java/io/grpc/ycsb_leveldb/YCSBLevelDBClient.java
