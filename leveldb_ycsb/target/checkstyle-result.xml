@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.2">
+<file name="/home/qwe52165/YCSB/leveldb/src/main/java/com/yahoo/ycsb/db/leveldb/YCSBLevelDBClient.java">
+</file>
+<file name="/home/qwe52165/YCSB/leveldb/src/main/java/com/yahoo/ycsb/db/leveldb/package-info.java">
+</file>
+</checkstyle>

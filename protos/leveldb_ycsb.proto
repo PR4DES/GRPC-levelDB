@@ -1,14 +1,14 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "io.grpc.ycsb_leveldb";
+option java_package = "com.yahoo.ycsb.db.leveldb";
 option java_outer_classname = "YCSBLeveDB";
 option objc_class_prefix = "LDB";
 
 package ycsbleveldb;
 
 service LevelDB { 
-	rpc Read(ReadM) returns(Result) {}
+	rpc Read(ReadM) returns(ReadResult) {}
 	rpc Scan(ScanM) returns(Result) {}
 	rpc Update(UpdateM) returns(Result) {}
 	rpc Insert(InsertM) returns(Result) {}
@@ -18,7 +18,6 @@ service LevelDB {
 message ReadM {
 	string table = 1;
 	string key = 2;
-	string field = 3;
 }
 
 message ScanM {
@@ -47,4 +46,9 @@ message DeleteM {
 
 message Result {
 	int32 result = 1;
+}
+
+message ReadResult {
+	string output = 1;
+	int32 result = 2;
 }
