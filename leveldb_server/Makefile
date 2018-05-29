@@ -39,7 +39,7 @@ vpath %.proto $(PROTOS_PATH)
 all: system-check leveldb_server
 
 leveldb_server: leveldb_ycsb.pb.o leveldb_ycsb.grpc.pb.o leveldb_server.o
-	$(CXX) $^ $(LDFLAGS) -o $@ -lleveldb
+	$(CXX) $^ $(LDFLAGS) -o $@ -lleveldb -lsnappy
 
 %.grpc.pb.cc: %.proto
 	$(PROTOC) -I $(PROTOS_PATH) --grpc_out=. --plugin=protoc-gen-grpc=$(GRPC_CPP_PLUGIN_PATH) $<
