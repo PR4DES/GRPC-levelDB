@@ -1,0 +1,6 @@
+[submodule "leveldb_server/grpc"]
+	path = leveldb_server/grpc
+	url = https://github.com/grpc/grpc.git
+[submodule "leveldb_server/leveldb"]
+	path = leveldb_server/leveldb
+	url = https://github.com/olzhabay/leveldb.git
