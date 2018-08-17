@@ -1,9 +1,26 @@
-cmake_minimum_required(VERSION 3.10)
-project(DB-server)
+cmake_minimum_required(VERSION 3.0)
+project(DB-server CXX)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-add_subdirectory(leveldb)
+add_compile_options(
+        -Wno-sign-compare
+        -std=c++17
+        -O2
+        -DNDEBUG
+)
+
+set(PMINDEXDB_BUILD TRUE)
+
 add_subdirectory(grpc)
+
+if (LEVELDB_BUILD)
+    add_subdirectory(leveldb)
+    add_definitions(-DLEVELDB_BUILD=1)
+endif(LEVELDB_BUILD)
+if (PMINDEXDB_BUILD)
+    add_subdirectory(PMIndexDB)
+    add_definitions(-DPMINDEXDB_BUILD=1)
+endif(PMINDEXDB_BUILD)
+
 set(_PROTOBUF_LIBPROTOBUF libprotobuf)
 set(_PROTOBUF_PROTOC $<TARGET_FILE:protoc>)
 set(_GRPC_GRPCPP_UNSECURE grpc++_unsecure)
@@ -31,14 +48,10 @@ add_custom_command(
 
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
-# Targets greeter_[async_](client|server)
-foreach(_target
-        leveldb_server)
-    add_executable(${_target} "${_target}.cc"
-            ${hw_proto_srcs}
-            ${hw_grpc_srcs})
-    target_link_libraries(${_target}
-            ${_GRPC_GRPCPP_UNSECURE}
-            ${_PROTOBUF_LIBPROTOBUF}
-            leveldb)
-endforeach()
+add_executable(leveldb_server leveldb_server.cc
+        ${hw_proto_srcs}
+        ${hw_grpc_srcs})
+target_link_libraries(leveldb_server
+        ${_GRPC_GRPCPP_UNSECURE}
+        ${_PROTOBUF_LIBPROTOBUF}
+        leveldb)

@@ -9,6 +9,9 @@
 #include <typeinfo>
 
 #include <leveldb/db.h>
+#ifdef PMINDEXDB_BUILD
+#include <leveldb/persistant_pool.h>
+#endif
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -87,14 +90,16 @@ void RunServer() {
 }
 
 int main(int argc, char** argv) {
+  std::string pmem_dir = "/mnt/mem0/db";
+  size_t pmem_size = 3900*1024*1024;
+  leveldb::nvram::create_pool(pmem_dir, pmem_size);
 	options.create_if_missing = true;
-
 	status = leveldb::DB::Open(options, "../thisisdb", &db);
-	if (false == status.ok()) {
+	if (!status.ok()) {
 		std::cout << "[LevelDB] Open Fail" << std::endl;
 		return 1;
 	}
-
 	RunServer();
+	leveldb::nvram::close_pool();
 	return 0;
 }
