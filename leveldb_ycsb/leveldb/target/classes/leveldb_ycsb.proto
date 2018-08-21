@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.yahoo.ycsb.db.leveldb";
+option java_outer_classname = "YCSBLeveDB";
+option objc_class_prefix = "LDB";
+
+package ycsbleveldb;
+
+service LevelDB { 
+	rpc Read(ReadM) returns(ReadResult) {}
+	rpc Scan(ScanM) returns(ReadResult) {}
+	rpc Update(UpdateM) returns(Result) {}
+	rpc Insert(InsertM) returns(Result) {}
+	rpc Ldelete(DeleteM) returns(Result) {}
+}
+
+message ReadM {
+	string table = 1;
+	string key = 2;
+}
+
+message ScanM {
+	string table = 1;
+	string startkey = 2;
+	int32 recordcount = 3;
+	string field = 4;
+}
+
+message UpdateM {
+	string table = 1;
+	string key = 2;
+	string values = 3;
+}
+
+message InsertM {
+	string table = 1;
+	string key = 2;
+	string values = 3;
+}
+
+message DeleteM {
+	string table = 1;
+	string key = 2;
+}
+
+message Result {
+	int32 result = 1;
+}
+
+message ReadResult {
+	string output = 1;
+	int32 result = 2;
+}

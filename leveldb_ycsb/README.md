@@ -3,11 +3,11 @@ build (don't need to)
 $ ./gradlew installDist
 ```
 
-1. cp -r com ~/.m2/repository
-2. check maven version is higher than 3.1.0
+1. jvm version is higher than 1.8
+2. maven version is higher than 3.1.0
 3. get YCSB
 ```
-$ git clone https://github.com/brianfrankcooper/YCSB
+$ git clone https://github.com/brianfrankcooper/YCSB.git
 ```
 4. add line(s) in
 - pom.xml
@@ -15,6 +15,8 @@ $ git clone https://github.com/brianfrankcooper/YCSB
 <module>leveldb</module>
 - bin/bindings.properties
 leveldb:com.yahoo.ycsb.db.leveldb.YCSBLevelDBClient
+- bin/ycsb
+add above one into right place
 5. build database binding
 ```
 $ mvn -pl com.yahoo.ycsb:leveldb-binding -am clean package
