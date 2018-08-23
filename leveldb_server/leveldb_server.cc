@@ -17,6 +17,8 @@
 #endif
 
 using grpc::Server;
+using grpc::ServerAsyncResponseWriter;
+using grpc::ServerCompletionQueue;
 using grpc::ServerBuilder;
 using grpc::ServerContext;
 using grpc::Status;
@@ -42,85 +44,274 @@ uint64_t getMicrotime(){
 	return static_cast<uint64_t>(currentTime.tv_sec) * 1000000 + currentTime.tv_usec;
 }
 
-class LevelDBServiceImpl final : public LevelDB::Service {
-	Status Read(ServerContext* context, const ReadM* request, ReadResult* reply) override {
-		std::string key = request->key();
-		std::string output = "";
-
-		uint64_t start_time = getMicrotime();
-		status = db->Get(leveldb::ReadOptions(), key, &output);
-//		std::cout << "Read," << getMicrotime() - start_time << std::endl;
-
-		if(false == status.ok()) {
-			reply->set_result(1);
-			reply->set_output("");
-			return Status::OK;
+class ServerImpl final {
+	public:
+		~ServerImpl() {
+			server_->Shutdown();
+			cq_->Shutdown();
 		}
-		reply->set_result(0);
-		reply->set_output(output);
-		return Status::OK;
-	}
-	Status Scan(ServerContext* context, const ScanM* request, ReadResult* reply) override {
-		std::string key = request->startkey();
-		int recordcount = request->recordcount();
-		std::string output = "";
-		uint64_t start_time = getMicrotime();
-		leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
-		int i = 0;
-		for(it->Seek(key); it->Valid(); it->Next()) {
-			if(i>=recordcount) break;
-			output = output + it->value().ToString();
-			i++;
-		}
-		std::cout << "Scan," << getMicrotime() - start_time << std::endl;
+		void Run() {
+			std::string server_address("0.0.0.0:30030");
+			ServerBuilder builder;
+			builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
+			builder.RegisterService(&service_);
+			cq_ = builder.AddCompletionQueue();
+			server_ = builder.BuildAndStart();
+			std::cout << "Server listening on " << server_address << std::endl;
 
-		reply->set_result(0);
-		reply->set_output(output);
-		return Status::OK;
-	}
-	Status Update(ServerContext* context, const UpdateM* request, Result* reply) override {
-		std::string key = request->key();
-		std::string value = request->values();
-
-		leveldb::WriteOptions woptions;
-		uint64_t start_time = getMicrotime();
-		status = db->Put(woptions, key, value);
-		std::cout << "Update," << getMicrotime() - start_time << std::endl;
-		if(false == status.ok()) {
-			reply->set_result(1);
-			return Status::OK;
+			HandleRpcs();
 		}
-		reply->set_result(0);
-		return Status::OK;
-	}
-	Status Insert(ServerContext* context, const InsertM* request, Result* reply) override {
-		std::string key = request->key();
-		std::string value = request->values();
+
+	private:
+		class CallData {
+			public:
+				virtual void Proceed() = 0;
+		};
+		class InsertCallData final : public CallData{
+			public:
+				InsertCallData(LevelDB::AsyncService* service, grpc::ServerCompletionQueue* cq)
+					: service_(service), cq_(cq), responder_(&ctx_), status_(CREATE) {
+					Proceed();
+					}
+				void Proceed() {
+					if (status_ == CREATE) {
+						status_ = PROCESS;
+						service_->RequestInsert(&ctx_, &request_, &responder_, cq_, cq_,
+								this);
+					} else if (status_ == PROCESS) {
+					new InsertCallData(service_, cq_);
+
+					std::string key = request_.key();
+					std::string value = request_.values();
 		
-		leveldb::WriteOptions woptions;
-		uint64_t start_time = getMicrotime();
-		status = db->Put(woptions, key, value);
-//		std::cout << "Insert," << getMicrotime() - start_time << std::endl;
-		if(false == status.ok()) {
-			reply->set_result(1);
-			return Status::OK;
-		}
-		reply->set_result(0);
-		return Status::OK;
-	}
-	Status Ldelete(ServerContext* context, const DeleteM* request, Result* reply) override {
-		std::string key = request->key();
+					leveldb::WriteOptions woptions;
+					uint64_t start_time = getMicrotime();
+					status = db->Put(woptions, key, value);
+			//		std::cout << "Insert," << getMicrotime() - start_time << std::endl;
+					if(false == status.ok()) {
+						reply_.set_result(1);
+					}
+					reply_.set_result(0);
+
+					status_ = FINISH;
+					responder_.Finish(reply_, Status::OK, this);
+				} else {
+					GPR_ASSERT(status_ == FINISH);
+					delete this;
+				}
+			}
+			private:
+				LevelDB::AsyncService* service_;
+				grpc::ServerCompletionQueue* cq_;
+				ServerContext ctx_;
+				
+				InsertM request_;
+				Result reply_;
+			
+				ServerAsyncResponseWriter<Result> responder_;
+				enum CallStatus { CREATE, PROCESS, FINISH };
+				CallStatus status_;
+		};
+		class ReadCallData final : public CallData {
+			public:
+				ReadCallData(LevelDB::AsyncService* service, grpc::ServerCompletionQueue* cq)
+					: service_(service), cq_(cq), responder_(&ctx_), status_(CREATE) {
+					Proceed();
+					}
+				void Proceed() {
+					if (status_ == CREATE) {
+						status_ = PROCESS;
+						service_->RequestRead(&ctx_, &request_, &responder_, cq_, cq_,
+								this);
+					} else if (status_ == PROCESS) {
+					new ReadCallData(service_, cq_);
+					std::string key = request_.key();
+					std::string output = "";
+
+					uint64_t start_time = getMicrotime();
+					status = db->Get(leveldb::ReadOptions(), key, &output);
+//					std::cout << "Read," << getMicrotime() - start_time << std::endl;
+
+					if(false == status.ok()) {
+						reply_.set_result(1);
+						reply_.set_output("");
+					}
+					reply_.set_result(0);
+					reply_.set_output(output);
+
+					status_ = FINISH;
+					responder_.Finish(reply_, Status::OK, this);
+				} else {
+					GPR_ASSERT(status_ == FINISH);
+					delete this;
+				}
+			}
+			private:
+				LevelDB::AsyncService* service_;
+				grpc::ServerCompletionQueue* cq_;
+				ServerContext ctx_;
+				
+				ReadM request_;
+				ReadResult reply_;
+			
+				ServerAsyncResponseWriter<ReadResult> responder_;
+				enum CallStatus { CREATE, PROCESS, FINISH };
+				CallStatus status_;
+		};
+		class ScanCallData final : public CallData {
+			public:
+				ScanCallData(LevelDB::AsyncService* service, grpc::ServerCompletionQueue* cq)
+					: service_(service), cq_(cq), responder_(&ctx_), status_(CREATE) {
+					Proceed();
+					}
+				void Proceed() {
+					if (status_ == CREATE) {
+						status_ = PROCESS;
+						service_->RequestScan(&ctx_, &request_, &responder_, cq_, cq_,
+								this);
+					} else if (status_ == PROCESS) {
+					new ScanCallData(service_, cq_);
+					std::string key = request_.startkey();
+					int recordcount = request_.recordcount();
+					std::string output = "";
+
+					uint64_t start_time = getMicrotime();
+					leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
+					int i = 0;
+					for(it->Seek(key); it->Valid(); it->Next()) {
+						if(i>=recordcount) break;
+						output = output + it->value().ToString();
+						i++;
+					}
+			//		std::cout << "Scan," << getMicrotime() - start_time << std::endl;
+
+					reply_.set_result(0);
+					reply_.set_output(output);
+
+					status_ = FINISH;
+					responder_.Finish(reply_, Status::OK, this);
+				} else {
+					GPR_ASSERT(status_ == FINISH);
+					delete this;
+				}
+			}
+			private:
+				LevelDB::AsyncService* service_;
+				grpc::ServerCompletionQueue* cq_;
+				ServerContext ctx_;
+				
+				ScanM request_;
+				ReadResult reply_;
+			
+				ServerAsyncResponseWriter<ReadResult> responder_;
+				enum CallStatus { CREATE, PROCESS, FINISH };
+				CallStatus status_;
+		};
+		class UpdateCallData final : public CallData {
+			public:
+				UpdateCallData(LevelDB::AsyncService* service, grpc::ServerCompletionQueue* cq)
+					: service_(service), cq_(cq), responder_(&ctx_), status_(CREATE) {
+					Proceed();
+					}
+				void Proceed() {
+					if (status_ == CREATE) {
+						status_ = PROCESS;
+						service_->RequestUpdate(&ctx_, &request_, &responder_, cq_, cq_,
+								this);
+					} else if (status_ == PROCESS) {
+					new UpdateCallData(service_, cq_);
+					std::string key = request_.key();
+					std::string value = request_.values();
+
+					leveldb::WriteOptions woptions;
+					uint64_t start_time = getMicrotime();
+					status = db->Put(woptions, key, value);
+//					std::cout << "Update," << getMicrotime() - start_time << std::endl;
+					if(false == status.ok()) {
+						reply_.set_result(1);
+					}
+					reply_.set_result(0);
+
+					status_ = FINISH;
+					responder_.Finish(reply_, Status::OK, this);
+				} else {
+					GPR_ASSERT(status_ == FINISH);
+					delete this;
+				}
+			}
+			private:
+				LevelDB::AsyncService* service_;
+				grpc::ServerCompletionQueue* cq_;
+				ServerContext ctx_;
+				
+				UpdateM request_;
+				Result reply_;
+			
+				ServerAsyncResponseWriter<Result> responder_;
+				enum CallStatus { CREATE, PROCESS, FINISH };
+				CallStatus status_;
+		};
+		class DeleteCallData final : public CallData {
+			public:
+				DeleteCallData(LevelDB::AsyncService* service, grpc::ServerCompletionQueue* cq)
+					: service_(service), cq_(cq), responder_(&ctx_), status_(CREATE) {
+					Proceed();
+					}
+				void Proceed() {
+					if (status_ == CREATE) {
+						status_ = PROCESS;
+						service_->RequestLdelete(&ctx_, &request_, &responder_, cq_, cq_,
+								this);
+					} else if (status_ == PROCESS) {
+					new DeleteCallData(service_, cq_);
+					std::string key = request_.key();
 		
-		uint64_t start_time = getMicrotime();
-		status = db->Delete(leveldb::WriteOptions(), key);
-		std::cout << "Delete," << getMicrotime() - start_time << std::endl;
-		if(false == status.ok()) {
-			reply->set_result(1);
-			return Status::OK;
+					uint64_t start_time = getMicrotime();
+					status = db->Delete(leveldb::WriteOptions(), key);
+//					std::cout << "Delete," << getMicrotime() - start_time << std::endl;
+					if(false == status.ok()) {
+						reply_.set_result(1);
+					}
+					reply_.set_result(0);
+
+					status_ = FINISH;
+					responder_.Finish(reply_, Status::OK, this);
+				} else {
+					GPR_ASSERT(status_ == FINISH);
+					delete this;
+				}
+			}
+			private:
+				LevelDB::AsyncService* service_;
+				grpc::ServerCompletionQueue* cq_;
+				ServerContext ctx_;
+				
+				DeleteM request_;
+				Result reply_;
+			
+				ServerAsyncResponseWriter<Result> responder_;
+				enum CallStatus { CREATE, PROCESS, FINISH };
+				CallStatus status_;
+		};
+
+		void HandleRpcs() {
+			new InsertCallData(&service_, cq_.get());
+			new ReadCallData(&service_, cq_.get());
+			new ScanCallData(&service_, cq_.get());
+			new UpdateCallData(&service_, cq_.get());
+			new DeleteCallData(&service_, cq_.get());
+			void* tag;
+			bool ok;
+			while(true) {
+				GPR_ASSERT(cq_->Next(&tag, &ok));
+				GPR_ASSERT(ok);
+				static_cast<CallData*>(tag)->Proceed();
+			}
 		}
-		reply->set_result(0);
-		return Status::OK;
-	}
+
+		std::unique_ptr<grpc::ServerCompletionQueue> cq_;
+		LevelDB::AsyncService service_;
+		std::unique_ptr<Server> server_;
 };
 
 void RunServer() {
@@ -135,6 +326,17 @@ void RunServer() {
 
 	server->Wait();
 }
+
+void Print10records() {
+	leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
+	int i = 0;
+	for (it->SeekToFirst(); it->Valid(); it->Next()) {
+		std::cout << it->key().ToString() << " : " << it->value().ToString() << std::endl;
+		i++;
+		if(i==10) break;
+	}
+}
+
 
 int main(int argc, char** argv) {
 	ReadLog = fopen("ReadLog","w");
@@ -158,15 +360,10 @@ int main(int argc, char** argv) {
 		return 1;
 	}
 
-/*	leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
-	int i = 0;
-	for (it->SeekToFirst(); it->Valid(); it->Next()) {
-		std::cout << it->key().ToString() << " : " << it->value().ToString() << std::endl;
-		i++;
-		if(i==10) break;
-	}*/
+//	Print10records();
 
-	RunServer();
+	ServerImpl server;
+	server.Run();
 #ifdef PMINDEXDB_BUILD
 	leveldb::nvram::close_pool();
 #endif
