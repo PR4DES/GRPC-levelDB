@@ -90,8 +90,9 @@ class ServerImpl final {
 			//		std::cout << "Insert," << getMicrotime() - start_time << std::endl;
 					if(false == status.ok()) {
 						reply_.set_result(1);
+					} else {
+						reply_.set_result(0);
 					}
-					reply_.set_result(0);
 
 					status_ = FINISH;
 					responder_.Finish(reply_, Status::OK, this);
@@ -135,9 +136,10 @@ class ServerImpl final {
 					if(false == status.ok()) {
 						reply_.set_result(1);
 						reply_.set_output("");
+					} else {
+						reply_.set_result(0);
+						reply_.set_output(output);
 					}
-					reply_.set_result(0);
-					reply_.set_output(output);
 
 					status_ = FINISH;
 					responder_.Finish(reply_, Status::OK, this);
@@ -180,7 +182,7 @@ class ServerImpl final {
 					int i = 0;
 					for(it->Seek(key); it->Valid(); it->Next()) {
 						if(i>=recordcount) break;
-						output = output + it->value().ToString();
+						output.append(it->value().ToString());
 						i++;
 					}
 			//		std::cout << "Scan," << getMicrotime() - start_time << std::endl;
@@ -229,8 +231,9 @@ class ServerImpl final {
 //					std::cout << "Update," << getMicrotime() - start_time << std::endl;
 					if(false == status.ok()) {
 						reply_.set_result(1);
+					} else {
+						reply_.set_result(0);
 					}
-					reply_.set_result(0);
 
 					status_ = FINISH;
 					responder_.Finish(reply_, Status::OK, this);
@@ -271,8 +274,9 @@ class ServerImpl final {
 //					std::cout << "Delete," << getMicrotime() - start_time << std::endl;
 					if(false == status.ok()) {
 						reply_.set_result(1);
+					} else {
+						reply_.set_result(0);
 					}
-					reply_.set_result(0);
 
 					status_ = FINISH;
 					responder_.Finish(reply_, Status::OK, this);
@@ -313,19 +317,6 @@ class ServerImpl final {
 		LevelDB::AsyncService service_;
 		std::unique_ptr<Server> server_;
 };
-
-void RunServer() {
-	std::string server_address("0.0.0.0:30030");
-	LevelDBServiceImpl service;
-
-	ServerBuilder builder;
-	builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
-	builder.RegisterService(&service);
-	std::unique_ptr<Server> server(builder.BuildAndStart());
-	std::cout << "Server listening on " << server_address << std::endl;
-
-	server->Wait();
-}
 
 void Print10records() {
 	leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
