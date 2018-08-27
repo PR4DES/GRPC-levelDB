@@ -3,15 +3,18 @@
 #include <cstdint>
 #include <string>
 #include <sys/time.h>
+#include <unistd.h>
 #include <grpc/grpc.h>
 #include <grpc++/server.h>
 #include <grpc++/server_builder.h>
 #include <grpc++/security/server_credentials.h>
 #include "leveldb_ycsb.grpc.pb.h"
 
+#include "perf_log.h"
 #include <typeinfo>
 
 #include <leveldb/db.h>
+//#include <leveldb/util/perf_log.h>
 #ifdef PMINDEXDB_BUILD
 #include <leveldb/persistant_pool.h>
 #endif
@@ -34,9 +37,9 @@ using ycsbleveldb::ReadResult;
 leveldb::DB *db;
 leveldb::Options options;
 leveldb::Status status;
-static FILE* ReadLog;
-static FILE* WriteLog;
-static FILE* UpdateLog;
+
+int count;
+int count2;
 
 uint64_t getMicrotime(){
 	struct timeval currentTime;
@@ -49,6 +52,7 @@ class ServerImpl final {
 		~ServerImpl() {
 			server_->Shutdown();
 			cq_->Shutdown();
+			std::cout << GetHistogram() << std::endl;
 		}
 		void Run() {
 			std::string server_address("0.0.0.0:30030");
@@ -85,9 +89,11 @@ class ServerImpl final {
 					std::string value = request_.values();
 		
 					leveldb::WriteOptions woptions;
-					uint64_t start_time = getMicrotime();
+					uint64_t start_time = NowMicros();
 					status = db->Put(woptions, key, value);
-			//		std::cout << "Insert," << getMicrotime() - start_time << std::endl;
+					uint64_t micros = NowMicros()- start_time;
+					LogMicros(INSERT, micros);
+
 					if(false == status.ok()) {
 						reply_.set_result(1);
 					} else {
@@ -131,7 +137,8 @@ class ServerImpl final {
 
 					uint64_t start_time = getMicrotime();
 					status = db->Get(leveldb::ReadOptions(), key, &output);
-//					std::cout << "Read," << getMicrotime() - start_time << std::endl;
+					uint64_t micros = NowMicros()- start_time;
+					LogMicros(READ, micros);
 
 					if(false == status.ok()) {
 						reply_.set_result(1);
@@ -143,11 +150,11 @@ class ServerImpl final {
 
 					status_ = FINISH;
 					responder_.Finish(reply_, Status::OK, this);
-				} else {
-					GPR_ASSERT(status_ == FINISH);
-					delete this;
+					} else {
+						GPR_ASSERT(status_ == FINISH);
+						delete this;
+					}
 				}
-			}
 			private:
 				LevelDB::AsyncService* service_;
 				grpc::ServerCompletionQueue* cq_;
@@ -185,7 +192,8 @@ class ServerImpl final {
 						output.append(it->value().ToString());
 						i++;
 					}
-			//		std::cout << "Scan," << getMicrotime() - start_time << std::endl;
+					uint64_t micros = NowMicros()- start_time;
+					LogMicros(SCAN, micros);
 
 					reply_.set_result(0);
 					reply_.set_output(output);
@@ -228,7 +236,8 @@ class ServerImpl final {
 					leveldb::WriteOptions woptions;
 					uint64_t start_time = getMicrotime();
 					status = db->Put(woptions, key, value);
-//					std::cout << "Update," << getMicrotime() - start_time << std::endl;
+					uint64_t micros = NowMicros()- start_time;
+					LogMicros(UPDATE, micros);
 					if(false == status.ok()) {
 						reply_.set_result(1);
 					} else {
@@ -268,14 +277,31 @@ class ServerImpl final {
 					} else if (status_ == PROCESS) {
 					new DeleteCallData(service_, cq_);
 					std::string key = request_.key();
-		
+					
+					if(key=="") {
+						count++;
+						count2++;
+						if(count>3) {
+							std::cout << "----" << std::endl;
+							std::cout << GetInfo() << std::endl;
+							ClearLogs();
+							count = 0;
+							if(count2>4) {
+								exit(0);
+							}
+						}
+						reply_.set_result(0);
+					} else {
+
 					uint64_t start_time = getMicrotime();
 					status = db->Delete(leveldb::WriteOptions(), key);
-//					std::cout << "Delete," << getMicrotime() - start_time << std::endl;
+					uint64_t micros = NowMicros()- start_time;
+					LogMicros(DELETE, micros);
 					if(false == status.ok()) {
 						reply_.set_result(1);
 					} else {
 						reply_.set_result(0);
+					}
 					}
 
 					status_ = FINISH;
@@ -330,12 +356,9 @@ void Print10records() {
 
 
 int main(int argc, char** argv) {
-	ReadLog = fopen("ReadLog","w");
-	if (NULL == ReadLog) perror("Error");
-	WriteLog = fopen("WriteLog", "w");
-	if (NULL == WriteLog) perror("Error");
-	UpdateLog = fopen("UpdateLog", "w");
-	if (NULL == UpdateLog) perror("Error");
+	CreatePerfLog();
+	count=0;
+	count2=0;
 #ifdef PMINDEXDB_BUILD
   std::string pmem_dir = "/mnt/mem0/db";
   size_t pmem_size = 4089446400;
@@ -358,8 +381,6 @@ int main(int argc, char** argv) {
 #ifdef PMINDEXDB_BUILD
 	leveldb::nvram::close_pool();
 #endif
-	fclose(ReadLog);
-	fclose(WriteLog);
-	fclose(UpdateLog);
+	ClosePerfLog();
 	return 0;
 }
