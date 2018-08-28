@@ -1,0 +1,3419 @@
+The system is: Linux - 4.15.0-32-generic - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3bcac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3bcac.dir/build.make CMakeFiles/cmTC_3bcac.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3bcac.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_3bcac.dir/testCXXCompiler.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_3bcac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bcac.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_3bcac.dir/testCXXCompiler.cxx.o  -o cmTC_3bcac 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69f3b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69f3b.dir/build.make CMakeFiles/cmTC_69f3b.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_69f3b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69f3b.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_69f3b 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-16ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --with-as=/usr/bin/x86_64-linux-gnu-as --with-ld=/usr/bin/x86_64-linux-gnu-ld --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_69f3b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQVrC2v.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_69f3b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_69f3b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_69f3b/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_69f3b.dir/build.make CMakeFiles/cmTC_69f3b.dir/build]
+  ignore line: [make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_69f3b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69f3b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_69f3b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-16ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --with-as=/usr/bin/x86_64-linux-gnu-as --with-ld=/usr/bin/x86_64-linux-gnu-ld --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_69f3b' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQVrC2v.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_69f3b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccQVrC2v.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_69f3b] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_69f3b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_14d7d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14d7d.dir/build.make CMakeFiles/cmTC_14d7d.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_14d7d.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_14d7d.dir/feature_tests.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_14d7d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14d7d.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_14d7d.dir/feature_tests.cxx.o  -o cmTC_14d7d 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2e2b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2e2b6.dir/build.make CMakeFiles/cmTC_2e2b6.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2e2b6.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_2e2b6.dir/feature_tests.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_2e2b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e2b6.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_2e2b6.dir/feature_tests.cxx.o  -o cmTC_2e2b6 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a86b7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a86b7.dir/build.make CMakeFiles/cmTC_a86b7.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a86b7.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_a86b7.dir/feature_tests.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a86b7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a86b7.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a86b7.dir/feature_tests.cxx.o  -o cmTC_a86b7 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a128a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a128a.dir/build.make CMakeFiles/cmTC_a128a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a128a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_a128a.dir/feature_tests.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_a128a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a128a.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a128a.dir/feature_tests.cxx.o  -o cmTC_a128a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/3.10.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dccd8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dccd8.dir/build.make CMakeFiles/cmTC_dccd8.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dccd8.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dccd8.dir/testCCompiler.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_dccd8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dccd8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dccd8.dir/testCCompiler.c.o  -o cmTC_dccd8 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d597f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d597f.dir/build.make CMakeFiles/cmTC_d597f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d597f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d597f.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o  -o cmTC_d597f 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-16ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --with-as=/usr/bin/x86_64-linux-gnu-as --with-ld=/usr/bin/x86_64-linux-gnu-ld --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d597f' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTcyTeO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d597f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d597f' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d597f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d597f.dir/build.make CMakeFiles/cmTC_d597f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d597f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d597f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o  -o cmTC_d597f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.3.0-16ubuntu3' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --with-as=/usr/bin/x86_64-linux-gnu-as --with-ld=/usr/bin/x86_64-linux-gnu-ld --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d597f' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccTcyTeO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_d597f /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccTcyTeO.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d597f] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_d597f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_75d3f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_75d3f.dir/build.make CMakeFiles/cmTC_75d3f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75d3f.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_75d3f.dir/feature_tests.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.c
+Linking C executable cmTC_75d3f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75d3f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_75d3f.dir/feature_tests.c.o  -o cmTC_75d3f 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e5036/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5036.dir/build.make CMakeFiles/cmTC_e5036.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5036.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e5036.dir/feature_tests.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e5036
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5036.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e5036.dir/feature_tests.c.o  -o cmTC_e5036 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9319c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9319c.dir/build.make CMakeFiles/cmTC_9319c.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9319c.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_9319c.dir/feature_tests.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9319c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9319c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9319c.dir/feature_tests.c.o  -o cmTC_9319c 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ceb05/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ceb05.dir/build.make CMakeFiles/cmTC_ceb05.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ceb05.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_ceb05.dir/CheckIncludeFile.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ceb05
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ceb05.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ceb05.dir/CheckIncludeFile.c.o  -o cmTC_ceb05 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0c69f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c69f.dir/build.make CMakeFiles/cmTC_0c69f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0c69f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_0c69f.dir/CheckIncludeFile.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0c69f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c69f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0c69f.dir/CheckIncludeFile.c.o  -o cmTC_0c69f 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b84ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b84ab.dir/build.make CMakeFiles/cmTC_b84ab.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b84ab.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_b84ab.dir/CheckIncludeFile.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b84ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b84ab.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b84ab.dir/CheckIncludeFile.c.o  -o cmTC_b84ab 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining size of off64_t passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_33d33/fast"
+/usr/bin/make -f CMakeFiles/cmTC_33d33.dir/build.make CMakeFiles/cmTC_33d33.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_33d33.dir/OFF64_T.c.o
+/usr/bin/cc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  -fPIE   -o CMakeFiles/cmTC_33d33.dir/OFF64_T.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CheckTypeSize/OFF64_T.c
+Linking C executable cmTC_33d33
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33d33.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_33d33.dir/OFF64_T.c.o  -o cmTC_33d33 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_234c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_234c7.dir/build.make CMakeFiles/cmTC_234c7.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_234c7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fseeko -fPIE   -o CMakeFiles/cmTC_234c7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_234c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_234c7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fseeko    -rdynamic CMakeFiles/cmTC_234c7.dir/CheckFunctionExists.c.o  -o cmTC_234c7 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b97bc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b97bc.dir/build.make CMakeFiles/cmTC_b97bc.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b97bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_b97bc.dir/CheckIncludeFile.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b97bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b97bc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b97bc.dir/CheckIncludeFile.c.o  -o cmTC_b97bc 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the function gethostbyname exists in the nsl passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7ac5c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7ac5c.dir/build.make CMakeFiles/cmTC_7ac5c.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7ac5c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -fPIE   -o CMakeFiles/cmTC_7ac5c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7ac5c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ac5c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_7ac5c.dir/CheckFunctionExists.c.o  -o cmTC_7ac5c -lnsl 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5360/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5360.dir/build.make CMakeFiles/cmTC_b5360.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5360.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clock_gettime -fPIE   -o CMakeFiles/cmTC_b5360.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b5360
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5360.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clock_gettime    -rdynamic CMakeFiles/cmTC_b5360.dir/CheckFunctionExists.c.o  -o cmTC_b5360 -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/socket.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f655d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f655d.dir/build.make CMakeFiles/cmTC_f655d.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f655d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_f655d.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_f655d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f655d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f655d.dir/CheckIncludeFiles.c.o  -o cmTC_f655d 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files arpa/inet.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6da91/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6da91.dir/build.make CMakeFiles/cmTC_6da91.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6da91.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_6da91.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_6da91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da91.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6da91.dir/CheckIncludeFiles.c.o  -o cmTC_6da91 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files arpa/nameser_compat.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1bb0a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1bb0a.dir/build.make CMakeFiles/cmTC_1bb0a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1bb0a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_1bb0a.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_1bb0a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bb0a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_1bb0a.dir/CheckIncludeFiles.c.o  -o cmTC_1bb0a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files arpa/nameser.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f8805/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8805.dir/build.make CMakeFiles/cmTC_f8805.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8805.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_f8805.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_f8805
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8805.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f8805.dir/CheckIncludeFiles.c.o  -o cmTC_f8805 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files assert.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d255e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d255e.dir/build.make CMakeFiles/cmTC_d255e.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d255e.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_d255e.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_d255e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d255e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d255e.dir/CheckIncludeFiles.c.o  -o cmTC_d255e 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files errno.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_474f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_474f3.dir/build.make CMakeFiles/cmTC_474f3.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_474f3.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_474f3.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_474f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_474f3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_474f3.dir/CheckIncludeFiles.c.o  -o cmTC_474f3 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a611b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a611b.dir/build.make CMakeFiles/cmTC_a611b.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a611b.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_a611b.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_a611b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a611b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a611b.dir/CheckIncludeFiles.c.o  -o cmTC_a611b 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files inttypes.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2100/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2100.dir/build.make CMakeFiles/cmTC_b2100.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2100.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_b2100.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_b2100
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2100.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b2100.dir/CheckIncludeFiles.c.o  -o cmTC_b2100 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files limits.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_284a1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_284a1.dir/build.make CMakeFiles/cmTC_284a1.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_284a1.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_284a1.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_284a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_284a1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_284a1.dir/CheckIncludeFiles.c.o  -o cmTC_284a1 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files malloc.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7f2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7f2a.dir/build.make CMakeFiles/cmTC_d7f2a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7f2a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_d7f2a.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_d7f2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7f2a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d7f2a.dir/CheckIncludeFiles.c.o  -o cmTC_d7f2a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files memory.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_38413/fast"
+/usr/bin/make -f CMakeFiles/cmTC_38413.dir/build.make CMakeFiles/cmTC_38413.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_38413.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_38413.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_38413
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38413.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_38413.dir/CheckIncludeFiles.c.o  -o cmTC_38413 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files netdb.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_901e4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_901e4.dir/build.make CMakeFiles/cmTC_901e4.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_901e4.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_901e4.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_901e4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_901e4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_901e4.dir/CheckIncludeFiles.c.o  -o cmTC_901e4 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files netinet/in.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e56de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e56de.dir/build.make CMakeFiles/cmTC_e56de.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e56de.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_e56de.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_e56de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e56de.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e56de.dir/CheckIncludeFiles.c.o  -o cmTC_e56de 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files netinet/tcp.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a542e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a542e.dir/build.make CMakeFiles/cmTC_a542e.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a542e.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_a542e.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_a542e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a542e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a542e.dir/CheckIncludeFiles.c.o  -o cmTC_a542e 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files net/if.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e6dd9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e6dd9.dir/build.make CMakeFiles/cmTC_e6dd9.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6dd9.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_e6dd9.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_e6dd9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6dd9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e6dd9.dir/CheckIncludeFiles.c.o  -o cmTC_e6dd9 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files signal.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b37bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b37bd.dir/build.make CMakeFiles/cmTC_b37bd.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b37bd.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_b37bd.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_b37bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b37bd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b37bd.dir/CheckIncludeFiles.c.o  -o cmTC_b37bd 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdbool.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca033/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca033.dir/build.make CMakeFiles/cmTC_ca033.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ca033.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_ca033.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_ca033
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca033.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ca033.dir/CheckIncludeFiles.c.o  -o cmTC_ca033 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files stdlib.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c436a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c436a.dir/build.make CMakeFiles/cmTC_c436a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c436a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_c436a.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_c436a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c436a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c436a.dir/CheckIncludeFiles.c.o  -o cmTC_c436a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e7ccf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7ccf.dir/build.make CMakeFiles/cmTC_e7ccf.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7ccf.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_e7ccf.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_e7ccf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7ccf.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e7ccf.dir/CheckIncludeFiles.c.o  -o cmTC_e7ccf 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files string.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ef04d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef04d.dir/build.make CMakeFiles/cmTC_ef04d.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef04d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_ef04d.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_ef04d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef04d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ef04d.dir/CheckIncludeFiles.c.o  -o cmTC_ef04d 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files stropts.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_30b9a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30b9a.dir/build.make CMakeFiles/cmTC_30b9a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30b9a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_30b9a.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_30b9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30b9a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_30b9a.dir/CheckIncludeFiles.c.o  -o cmTC_30b9a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/ioctl.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5396/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5396.dir/build.make CMakeFiles/cmTC_b5396.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5396.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_b5396.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_b5396
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5396.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b5396.dir/CheckIncludeFiles.c.o  -o cmTC_b5396 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/param.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65eb7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65eb7.dir/build.make CMakeFiles/cmTC_65eb7.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65eb7.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_65eb7.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_65eb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65eb7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_65eb7.dir/CheckIncludeFiles.c.o  -o cmTC_65eb7 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/select.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5edd7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5edd7.dir/build.make CMakeFiles/cmTC_5edd7.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5edd7.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_5edd7.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_5edd7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5edd7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5edd7.dir/CheckIncludeFiles.c.o  -o cmTC_5edd7 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/stat.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_417d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_417d7.dir/build.make CMakeFiles/cmTC_417d7.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_417d7.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_417d7.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_417d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_417d7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_417d7.dir/CheckIncludeFiles.c.o  -o cmTC_417d7 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_42cd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42cd3.dir/build.make CMakeFiles/cmTC_42cd3.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42cd3.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_42cd3.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_42cd3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42cd3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_42cd3.dir/CheckIncludeFiles.c.o  -o cmTC_42cd3 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/uio.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9c94/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9c94.dir/build.make CMakeFiles/cmTC_a9c94.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9c94.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_a9c94.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_a9c94
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9c94.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a9c94.dir/CheckIncludeFiles.c.o  -o cmTC_a9c94 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files time.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_36bba/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36bba.dir/build.make CMakeFiles/cmTC_36bba.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36bba.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_36bba.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_36bba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36bba.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_36bba.dir/CheckIncludeFiles.c.o  -o cmTC_36bba 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files dlfcn.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4739f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4739f.dir/build.make CMakeFiles/cmTC_4739f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4739f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_4739f.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_4739f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4739f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4739f.dir/CheckIncludeFiles.c.o  -o cmTC_4739f 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e3b44/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e3b44.dir/build.make CMakeFiles/cmTC_e3b44.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3b44.dir/CheckIncludeFiles.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_e3b44.dir/CheckIncludeFiles.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_e3b44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3b44.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e3b44.dir/CheckIncludeFiles.c.o  -o cmTC_e3b44 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_SOCKLEN_T succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5bb4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5bb4.dir/build.make CMakeFiles/cmTC_d5bb4.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5bb4.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_SOCKLEN_T -fPIE   -o CMakeFiles/cmTC_d5bb4.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d5bb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5bb4.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_SOCKLEN_T    -rdynamic CMakeFiles/cmTC_d5bb4.dir/src.c.o  -o cmTC_d5bb4 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			socklen_t var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_BOOL_T succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_93b7c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_93b7c.dir/build.make CMakeFiles/cmTC_93b7c.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93b7c.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_BOOL_T -fPIE   -o CMakeFiles/cmTC_93b7c.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_93b7c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93b7c.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_BOOL_T    -rdynamic CMakeFiles/cmTC_93b7c.dir/src.c.o  -o cmTC_93b7c -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			bool var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_SSIZE_T succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_59a82/fast"
+/usr/bin/make -f CMakeFiles/cmTC_59a82.dir/build.make CMakeFiles/cmTC_59a82.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59a82.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_SSIZE_T -fPIE   -o CMakeFiles/cmTC_59a82.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_59a82
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59a82.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_SSIZE_T    -rdynamic CMakeFiles/cmTC_59a82.dir/src.c.o  -o cmTC_59a82 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			ssize_t var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_LONGLONG succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b5511/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b5511.dir/build.make CMakeFiles/cmTC_b5511.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5511.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_LONGLONG -fPIE   -o CMakeFiles/cmTC_b5511.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b5511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5511.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_LONGLONG    -rdynamic CMakeFiles/cmTC_b5511.dir/src.c.o  -o cmTC_b5511 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			long long var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_SIG_ATOMIC_T succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1852e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1852e.dir/build.make CMakeFiles/cmTC_1852e.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1852e.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_SIG_ATOMIC_T -fPIE   -o CMakeFiles/cmTC_1852e.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1852e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1852e.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_SIG_ATOMIC_T    -rdynamic CMakeFiles/cmTC_1852e.dir/src.c.o  -o cmTC_1852e -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			sig_atomic_t var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_STRUCT_ADDRINFO succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9f49e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f49e.dir/build.make CMakeFiles/cmTC_9f49e.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f49e.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_STRUCT_ADDRINFO -fPIE   -o CMakeFiles/cmTC_9f49e.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9f49e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f49e.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_STRUCT_ADDRINFO    -rdynamic CMakeFiles/cmTC_9f49e.dir/src.c.o  -o cmTC_9f49e -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			struct addrinfo var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_STRUCT_IN6_ADDR succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9c6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9c6a.dir/build.make CMakeFiles/cmTC_a9c6a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a9c6a.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_STRUCT_IN6_ADDR -fPIE   -o CMakeFiles/cmTC_a9c6a.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_a9c6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9c6a.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_STRUCT_IN6_ADDR    -rdynamic CMakeFiles/cmTC_a9c6a.dir/src.c.o  -o cmTC_a9c6a -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			struct in6_addr var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_STRUCT_SOCKADDR_IN6 succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2c8cf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2c8cf.dir/build.make CMakeFiles/cmTC_2c8cf.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2c8cf.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_STRUCT_SOCKADDR_IN6 -fPIE   -o CMakeFiles/cmTC_2c8cf.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2c8cf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c8cf.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_STRUCT_SOCKADDR_IN6    -rdynamic CMakeFiles/cmTC_2c8cf.dir/src.c.o  -o cmTC_2c8cf -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			struct sockaddr_in6 var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_STRUCT_SOCKADDR_STORAGE succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1342e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1342e.dir/build.make CMakeFiles/cmTC_1342e.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1342e.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_STRUCT_SOCKADDR_STORAGE -fPIE   -o CMakeFiles/cmTC_1342e.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1342e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1342e.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_STRUCT_SOCKADDR_STORAGE    -rdynamic CMakeFiles/cmTC_1342e.dir/src.c.o  -o cmTC_1342e -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			struct sockaddr_storage var_exists;
+			return 0;
+		}
+	
+Performing C SOURCE FILE Test HAVE_STRUCT_TIMEVAL succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_88b98/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88b98.dir/build.make CMakeFiles/cmTC_88b98.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_88b98.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_STRUCT_TIMEVAL -fPIE   -o CMakeFiles/cmTC_88b98.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_88b98
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88b98.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_STRUCT_TIMEVAL    -rdynamic CMakeFiles/cmTC_88b98.dir/src.c.o  -o cmTC_88b98 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+		#include <stdio.h>
+		#include <stdlib.h>
+	
+		#include <stdbool.h>
+		#include <sys/types.h>
+		#include <arpa/inet.h>
+		#include <arpa/nameser.h>
+		#include <netdb.h>
+		#include <net/if.h>
+		#include <netinet/in.h>
+		#include <netinet/tcp.h>
+		#include <signal.h>
+		#include <stdlib.h>
+		#include <string.h>
+		#include <strings.h>
+		#include <sys/ioctl.h>
+		#include <sys/select.h>
+		#include <sys/socket.h>
+		#include <sys/time.h>
+		#include <sys/uio.h>
+		#include <time.h>
+		#include <fcntl.h>
+		#include <unistd.h>
+		int main() {
+			struct timeval var_exists;
+			return 0;
+		}
+	
+Determining if the AF_INET6 exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c36bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c36bb.dir/build.make CMakeFiles/cmTC_c36bb.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c36bb.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_c36bb.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c36bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c36bb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c36bb.dir/CheckSymbolExists.c.o  -o cmTC_c36bb -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef AF_INET6
+  return ((int*)(&AF_INET6))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the O_NONBLOCK exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2116/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2116.dir/build.make CMakeFiles/cmTC_f2116.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2116.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_f2116.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f2116
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2116.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f2116.dir/CheckSymbolExists.c.o  -o cmTC_f2116 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef O_NONBLOCK
+  return ((int*)(&O_NONBLOCK))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the FIONBIO exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_381cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_381cd.dir/build.make CMakeFiles/cmTC_381cd.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_381cd.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_381cd.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_381cd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_381cd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_381cd.dir/CheckSymbolExists.c.o  -o cmTC_381cd -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef FIONBIO
+  return ((int*)(&FIONBIO))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the SIOCGIFADDR exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15593/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15593.dir/build.make CMakeFiles/cmTC_15593.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15593.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_15593.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_15593
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15593.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_15593.dir/CheckSymbolExists.c.o  -o cmTC_15593 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef SIOCGIFADDR
+  return ((int*)(&SIOCGIFADDR))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the MSG_NOSIGNAL exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6dcfa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6dcfa.dir/build.make CMakeFiles/cmTC_6dcfa.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6dcfa.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_6dcfa.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6dcfa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6dcfa.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6dcfa.dir/CheckSymbolExists.c.o  -o cmTC_6dcfa -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef MSG_NOSIGNAL
+  return ((int*)(&MSG_NOSIGNAL))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the PF_INET6 exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_30b0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30b0f.dir/build.make CMakeFiles/cmTC_30b0f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30b0f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_30b0f.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_30b0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30b0f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_30b0f.dir/CheckSymbolExists.c.o  -o cmTC_30b0f -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef PF_INET6
+  return ((int*)(&PF_INET6))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the CLOCK_MONOTONIC exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29ddc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29ddc.dir/build.make CMakeFiles/cmTC_29ddc.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_29ddc.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_29ddc.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_29ddc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29ddc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_29ddc.dir/CheckSymbolExists.c.o  -o cmTC_29ddc -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef CLOCK_MONOTONIC
+  return ((int*)(&CLOCK_MONOTONIC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_18a33/fast"
+/usr/bin/make -f CMakeFiles/cmTC_18a33.dir/build.make CMakeFiles/cmTC_18a33.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18a33.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID -fPIE   -o CMakeFiles/cmTC_18a33.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_18a33
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18a33.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_SOCKADDR_IN6_SIN6_SCOPE_ID    -rdynamic CMakeFiles/cmTC_18a33.dir/src.c.o  -o cmTC_18a33 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main()
+{
+   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_scope_id);
+   return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_LL succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b8ceb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8ceb.dir/build.make CMakeFiles/cmTC_b8ceb.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8ceb.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -DHAVE_LL -fPIE   -o CMakeFiles/cmTC_b8ceb.dir/src.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b8ceb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8ceb.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_LL    -rdynamic CMakeFiles/cmTC_b8ceb.dir/src.c.o  -o cmTC_b8ceb -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { int n=1234LL; return 0; }
+Determining if the connect exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_275c4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_275c4.dir/build.make CMakeFiles/cmTC_275c4.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_275c4.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_275c4.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_275c4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_275c4.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_275c4.dir/CheckSymbolExists.c.o  -o cmTC_275c4 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef connect
+  return ((int*)(&connect))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fcntl exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_52840/fast"
+/usr/bin/make -f CMakeFiles/cmTC_52840.dir/build.make CMakeFiles/cmTC_52840.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52840.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_52840.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_52840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52840.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_52840.dir/CheckSymbolExists.c.o  -o cmTC_52840 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fcntl
+  return ((int*)(&fcntl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the freeaddrinfo exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_430ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_430ab.dir/build.make CMakeFiles/cmTC_430ab.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_430ab.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_430ab.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_430ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_430ab.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_430ab.dir/CheckSymbolExists.c.o  -o cmTC_430ab -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef freeaddrinfo
+  return ((int*)(&freeaddrinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getaddrinfo exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_37b11/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37b11.dir/build.make CMakeFiles/cmTC_37b11.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37b11.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_37b11.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_37b11
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37b11.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_37b11.dir/CheckSymbolExists.c.o  -o cmTC_37b11 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getaddrinfo
+  return ((int*)(&getaddrinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getenv exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e7920/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7920.dir/build.make CMakeFiles/cmTC_e7920.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7920.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_e7920.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e7920
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7920.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e7920.dir/CheckSymbolExists.c.o  -o cmTC_e7920 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getenv
+  return ((int*)(&getenv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gethostbyaddr exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e7e47/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7e47.dir/build.make CMakeFiles/cmTC_e7e47.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e7e47.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_e7e47.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e7e47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7e47.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e7e47.dir/CheckSymbolExists.c.o  -o cmTC_e7e47 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostbyaddr
+  return ((int*)(&gethostbyaddr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gethostbyname exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d1f25/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d1f25.dir/build.make CMakeFiles/cmTC_d1f25.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d1f25.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_d1f25.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_d1f25
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1f25.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d1f25.dir/CheckSymbolExists.c.o  -o cmTC_d1f25 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostbyname
+  return ((int*)(&gethostbyname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gethostname exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35d91/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35d91.dir/build.make CMakeFiles/cmTC_35d91.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35d91.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_35d91.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_35d91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35d91.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_35d91.dir/CheckSymbolExists.c.o  -o cmTC_35d91 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gethostname
+  return ((int*)(&gethostname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getnameinfo exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f302a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f302a.dir/build.make CMakeFiles/cmTC_f302a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f302a.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_f302a.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f302a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f302a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f302a.dir/CheckSymbolExists.c.o  -o cmTC_f302a -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getnameinfo
+  return ((int*)(&getnameinfo))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getservbyport_r exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff0e8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff0e8.dir/build.make CMakeFiles/cmTC_ff0e8.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff0e8.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_ff0e8.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ff0e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff0e8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ff0e8.dir/CheckSymbolExists.c.o  -o cmTC_ff0e8 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getservbyport_r
+  return ((int*)(&getservbyport_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gettimeofday exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55dd2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55dd2.dir/build.make CMakeFiles/cmTC_55dd2.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55dd2.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_55dd2.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_55dd2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55dd2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_55dd2.dir/CheckSymbolExists.c.o  -o cmTC_55dd2 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gettimeofday
+  return ((int*)(&gettimeofday))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the if_indextoname exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c582a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c582a.dir/build.make CMakeFiles/cmTC_c582a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c582a.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_c582a.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c582a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c582a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c582a.dir/CheckSymbolExists.c.o  -o cmTC_c582a -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef if_indextoname
+  return ((int*)(&if_indextoname))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the inet_ntop exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2ff3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2ff3.dir/build.make CMakeFiles/cmTC_b2ff3.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2ff3.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_b2ff3.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b2ff3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2ff3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b2ff3.dir/CheckSymbolExists.c.o  -o cmTC_b2ff3 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_ntop
+  return ((int*)(&inet_ntop))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the inet_pton exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_19e1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_19e1f.dir/build.make CMakeFiles/cmTC_19e1f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19e1f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_19e1f.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_19e1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19e1f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_19e1f.dir/CheckSymbolExists.c.o  -o cmTC_19e1f -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_pton
+  return ((int*)(&inet_pton))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the ioctl exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a7618/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7618.dir/build.make CMakeFiles/cmTC_a7618.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7618.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_a7618.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a7618
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7618.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a7618.dir/CheckSymbolExists.c.o  -o cmTC_a7618 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef ioctl
+  return ((int*)(&ioctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the recv exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b8fdf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8fdf.dir/build.make CMakeFiles/cmTC_b8fdf.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8fdf.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_b8fdf.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b8fdf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8fdf.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b8fdf.dir/CheckSymbolExists.c.o  -o cmTC_b8fdf -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef recv
+  return ((int*)(&recv))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the recvfrom exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a7650/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7650.dir/build.make CMakeFiles/cmTC_a7650.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7650.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_a7650.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a7650
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7650.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a7650.dir/CheckSymbolExists.c.o  -o cmTC_a7650 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef recvfrom
+  return ((int*)(&recvfrom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the send exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_df16f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_df16f.dir/build.make CMakeFiles/cmTC_df16f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_df16f.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_df16f.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_df16f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df16f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_df16f.dir/CheckSymbolExists.c.o  -o cmTC_df16f -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef send
+  return ((int*)(&send))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the setsockopt exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6a84e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a84e.dir/build.make CMakeFiles/cmTC_6a84e.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a84e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_6a84e.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6a84e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a84e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6a84e.dir/CheckSymbolExists.c.o  -o cmTC_6a84e -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef setsockopt
+  return ((int*)(&setsockopt))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the socket exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_221ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_221ef.dir/build.make CMakeFiles/cmTC_221ef.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_221ef.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_221ef.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_221ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_221ef.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_221ef.dir/CheckSymbolExists.c.o  -o cmTC_221ef -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef socket
+  return ((int*)(&socket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strcasecmp exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3c2fe/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3c2fe.dir/build.make CMakeFiles/cmTC_3c2fe.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c2fe.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_3c2fe.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3c2fe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c2fe.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3c2fe.dir/CheckSymbolExists.c.o  -o cmTC_3c2fe -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcasecmp
+  return ((int*)(&strcasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strdup exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60a4b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60a4b.dir/build.make CMakeFiles/cmTC_60a4b.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_60a4b.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_60a4b.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_60a4b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60a4b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_60a4b.dir/CheckSymbolExists.c.o  -o cmTC_60a4b -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strdup
+  return ((int*)(&strdup))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strncasecmp exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_916c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_916c5.dir/build.make CMakeFiles/cmTC_916c5.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_916c5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_916c5.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_916c5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_916c5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_916c5.dir/CheckSymbolExists.c.o  -o cmTC_916c5 -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncasecmp
+  return ((int*)(&strncasecmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the writev exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_357ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_357ab.dir/build.make CMakeFiles/cmTC_357ab.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_357ab.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE -D_POSIX_C_SOURCE=199309L -D_XOPEN_SOURCE=600  -fPIE   -o CMakeFiles/cmTC_357ab.dir/CheckSymbolExists.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_357ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_357ab.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_357ab.dir/CheckSymbolExists.c.o  -o cmTC_357ab -lnsl -lrt 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdbool.h>
+#include <sys/types.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <netdb.h>
+#include <net/if.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/select.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <sys/uio.h>
+#include <time.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef writev
+  return ((int*)(&writev))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_616f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_616f7.dir/build.make CMakeFiles/cmTC_616f7.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_616f7.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE   -o CMakeFiles/cmTC_616f7.dir/CheckIncludeFile.c.o   -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_616f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_616f7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_616f7.dir/CheckIncludeFile.c.o  -o cmTC_616f7 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e1492/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e1492.dir/build.make CMakeFiles/cmTC_e1492.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1492.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_e1492.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e1492
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1492.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_e1492.dir/CheckFunctionExists.c.o  -o cmTC_e1492 -lpthread 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fnmatch.h exists passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a142b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a142b.dir/build.make CMakeFiles/cmTC_a142b.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a142b.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_a142b.dir/CheckIncludeFile.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_a142b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a142b.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_a142b.dir/CheckIncludeFile.cxx.o  -o cmTC_a142b 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining size of uint32_t passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8f089/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8f089.dir/build.make CMakeFiles/cmTC_8f089.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8f089.dir/uint32_t.cpp.o
+/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_8f089.dir/uint32_t.cpp.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CheckTypeSize/uint32_t.cpp
+Linking CXX executable cmTC_8f089
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f089.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_8f089.dir/uint32_t.cpp.o  -o cmTC_8f089 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Determining if the strtoll exist passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ea739/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ea739.dir/build.make CMakeFiles/cmTC_ea739.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ea739.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_ea739.dir/CheckSymbolExists.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_ea739
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea739.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_ea739.dir/CheckSymbolExists.cxx.o  -o cmTC_ea739 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+File /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtoll
+  return ((int*)(&strtoll))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining size of pthread_rwlock_t passed with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80570/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80570.dir/build.make CMakeFiles/cmTC_80570.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_80570.dir/RWLOCK.cpp.o
+/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_80570.dir/RWLOCK.cpp.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CheckTypeSize/RWLOCK.cpp
+Linking CXX executable cmTC_80570
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80570.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_80570.dir/RWLOCK.cpp.o  -o cmTC_80570 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_STD_CXX11 succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3207a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3207a.dir/build.make CMakeFiles/cmTC_3207a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3207a.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_CXX_FLAG_STD_CXX11  -std=c++11 -fPIE   -std=c++11 -o CMakeFiles/cmTC_3207a.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_3207a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3207a.dir/link.txt --verbose=1
+/usr/bin/c++   -DHAVE_CXX_FLAG_STD_CXX11  -std=c++11    -rdynamic CMakeFiles/cmTC_3207a.dir/src.cxx.o  -o cmTC_3207a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WALL succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7d6c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7d6c.dir/build.make CMakeFiles/cmTC_d7d6c.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7d6c.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -DHAVE_CXX_FLAG_WALL  -Wall -fPIE   -Wall -o CMakeFiles/cmTC_d7d6c.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d7d6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7d6c.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -DHAVE_CXX_FLAG_WALL  -Wall    -rdynamic CMakeFiles/cmTC_d7d6c.dir/src.cxx.o  -o cmTC_d7d6c 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WEXTRA succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9f325/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f325.dir/build.make CMakeFiles/cmTC_9f325.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9f325.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -DHAVE_CXX_FLAG_WEXTRA  -Wextra -fPIE   -Wextra -o CMakeFiles/cmTC_9f325.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9f325
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f325.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -DHAVE_CXX_FLAG_WEXTRA  -Wextra    -rdynamic CMakeFiles/cmTC_9f325.dir/src.cxx.o  -o cmTC_9f325 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHADOW succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_21de6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21de6.dir/build.make CMakeFiles/cmTC_21de6.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21de6.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -DHAVE_CXX_FLAG_WSHADOW  -Wshadow -fPIE   -Wshadow -o CMakeFiles/cmTC_21de6.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_21de6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21de6.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -DHAVE_CXX_FLAG_WSHADOW  -Wshadow    -rdynamic CMakeFiles/cmTC_21de6.dir/src.cxx.o  -o cmTC_21de6 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WERROR succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f0814/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f0814.dir/build.make CMakeFiles/cmTC_f0814.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f0814.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_WERROR  -Werror -fPIE   -Werror -o CMakeFiles/cmTC_f0814.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f0814
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0814.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_WERROR  -Werror    -rdynamic CMakeFiles/cmTC_f0814.dir/src.cxx.o  -o cmTC_f0814 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7984f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7984f.dir/build.make CMakeFiles/cmTC_7984f.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7984f.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_PEDANTIC  -pedantic -fPIE   -pedantic -o CMakeFiles/cmTC_7984f.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7984f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7984f.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -DHAVE_CXX_FLAG_PEDANTIC  -pedantic    -rdynamic CMakeFiles/cmTC_7984f.dir/src.cxx.o  -o cmTC_7984f 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC_ERRORS succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c3af4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c3af4.dir/build.make CMakeFiles/cmTC_c3af4.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3af4.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -pedantic-errors -fPIE   -pedantic-errors -o CMakeFiles/cmTC_c3af4.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c3af4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3af4.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -pedantic-errors    -rdynamic CMakeFiles/cmTC_c3af4.dir/src.cxx.o  -o cmTC_c3af4 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WFLOAT_EQUAL succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e715c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e715c.dir/build.make CMakeFiles/cmTC_e715c.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e715c.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wfloat-equal -fPIE   -Wfloat-equal -o CMakeFiles/cmTC_e715c.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e715c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e715c.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -DHAVE_CXX_FLAG_WFLOAT_EQUAL  -Wfloat-equal    -rdynamic CMakeFiles/cmTC_e715c.dir/src.cxx.o  -o cmTC_e715c 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FSTRICT_ALIASING succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e98af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e98af.dir/build.make CMakeFiles/cmTC_e98af.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e98af.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -fstrict-aliasing -fPIE   -fstrict-aliasing -o CMakeFiles/cmTC_e98af.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e98af
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e98af.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -fstrict-aliasing    -rdynamic CMakeFiles/cmTC_e98af.dir/src.cxx.o  -o cmTC_e98af 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WZERO_AS_NULL_POINTER_CONSTANT succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7367/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7367.dir/build.make CMakeFiles/cmTC_b7367.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b7367.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -DHAVE_CXX_FLAG_WZERO_AS_NULL_POINTER_CONSTANT  -Wzero-as-null-pointer-constant -fPIE   -Wzero-as-null-pointer-constant -o CMakeFiles/cmTC_b7367.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_b7367
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7367.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -DHAVE_CXX_FLAG_WZERO_AS_NULL_POINTER_CONSTANT  -Wzero-as-null-pointer-constant    -rdynamic CMakeFiles/cmTC_b7367.dir/src.cxx.o  -o cmTC_b7367 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSTRICT_ALIASING succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7c028/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7c028.dir/build.make CMakeFiles/cmTC_7c028.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7c028.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wstrict-aliasing -fPIE   -Wstrict-aliasing -o CMakeFiles/cmTC_7c028.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7c028
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c028.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -Wstrict-aliasing    -rdynamic CMakeFiles/cmTC_7c028.dir/src.cxx.o  -o cmTC_7c028 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_COVERAGE succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aa0cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aa0cb.dir/build.make CMakeFiles/cmTC_aa0cb.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aa0cb.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -Wstrict-aliasing -DHAVE_CXX_FLAG_COVERAGE  --coverage -fPIE   --coverage -o CMakeFiles/cmTC_aa0cb.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_aa0cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa0cb.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -Wstrict-aliasing -DHAVE_CXX_FLAG_COVERAGE  --coverage    -rdynamic CMakeFiles/cmTC_aa0cb.dir/src.cxx.o  -o cmTC_aa0cb 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test BENCHMARK_HAS_O3_FLAG succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_09f2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_09f2a.dir/build.make CMakeFiles/cmTC_09f2a.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_09f2a.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -Wstrict-aliasing -DBENCHMARK_HAS_O3_FLAG -fPIE   -O3 -o CMakeFiles/cmTC_09f2a.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_09f2a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09f2a.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -Wstrict-aliasing -DBENCHMARK_HAS_O3_FLAG    -rdynamic CMakeFiles/cmTC_09f2a.dir/src.cxx.o  -o cmTC_09f2a 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test BENCHMARK_HAS_CXX03_FLAG succeeded with the following output:
+Change Dir: /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_093cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_093cb.dir/build.make CMakeFiles/cmTC_093cb.dir/build
+make[1]: Entering directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_093cb.dir/src.cxx.o
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -Wstrict-aliasing -DBENCHMARK_HAS_CXX03_FLAG -fPIE   -std=c++03 -o CMakeFiles/cmTC_093cb.dir/src.cxx.o -c /home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_093cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_093cb.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wfloat-equal -fstrict-aliasing -Wzero-as-null-pointer-constant -Wstrict-aliasing -DBENCHMARK_HAS_CXX03_FLAG    -rdynamic CMakeFiles/cmTC_093cb.dir/src.cxx.o  -o cmTC_093cb 
+make[1]: Leaving directory '/home/qwe52165/GRPC-levelDB/leveldb_server/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }

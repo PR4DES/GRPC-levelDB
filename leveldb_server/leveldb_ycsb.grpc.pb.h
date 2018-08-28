@@ -41,12 +41,12 @@ class LevelDB final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>> PrepareAsyncRead(::grpc::ClientContext* context, const ::ycsbleveldb::ReadM& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>>(PrepareAsyncReadRaw(context, request, cq));
     }
-    virtual ::grpc::Status Scan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::ycsbleveldb::Result* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>> AsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>>(AsyncScanRaw(context, request, cq));
+    virtual ::grpc::Status Scan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::ycsbleveldb::ReadResult* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>> AsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>>(AsyncScanRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>> PrepareAsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>>(PrepareAsyncScanRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>> PrepareAsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>>(PrepareAsyncScanRaw(context, request, cq));
     }
     virtual ::grpc::Status Update(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::ycsbleveldb::Result* response) = 0;
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>> AsyncUpdate(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::grpc::CompletionQueue* cq) {
@@ -72,8 +72,8 @@ class LevelDB final {
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>* AsyncReadRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ReadM& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>* PrepareAsyncReadRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ReadM& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>* AsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>* PrepareAsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>* AsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::ReadResult>* PrepareAsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>* AsyncUpdateRaw(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>* PrepareAsyncUpdateRaw(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::ycsbleveldb::Result>* AsyncInsertRaw(::grpc::ClientContext* context, const ::ycsbleveldb::InsertM& request, ::grpc::CompletionQueue* cq) = 0;
@@ -91,12 +91,12 @@ class LevelDB final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>> PrepareAsyncRead(::grpc::ClientContext* context, const ::ycsbleveldb::ReadM& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>>(PrepareAsyncReadRaw(context, request, cq));
     }
-    ::grpc::Status Scan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::ycsbleveldb::Result* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>> AsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>>(AsyncScanRaw(context, request, cq));
+    ::grpc::Status Scan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::ycsbleveldb::ReadResult* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>> AsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>>(AsyncScanRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>> PrepareAsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>>(PrepareAsyncScanRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>> PrepareAsyncScan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>>(PrepareAsyncScanRaw(context, request, cq));
     }
     ::grpc::Status Update(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::ycsbleveldb::Result* response) override;
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>> AsyncUpdate(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::grpc::CompletionQueue* cq) {
@@ -124,8 +124,8 @@ class LevelDB final {
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>* AsyncReadRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ReadM& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>* PrepareAsyncReadRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ReadM& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* AsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* PrepareAsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>* AsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>* PrepareAsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* AsyncUpdateRaw(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* PrepareAsyncUpdateRaw(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* AsyncInsertRaw(::grpc::ClientContext* context, const ::ycsbleveldb::InsertM& request, ::grpc::CompletionQueue* cq) override;
@@ -145,7 +145,7 @@ class LevelDB final {
     Service();
     virtual ~Service();
     virtual ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response);
-    virtual ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response);
+    virtual ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::ReadResult* response);
     virtual ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response);
     virtual ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response);
     virtual ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response);
@@ -182,11 +182,11 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestScan(::grpc::ServerContext* context, ::ycsbleveldb::ScanM* request, ::grpc::ServerAsyncResponseWriter< ::ycsbleveldb::Result>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestScan(::grpc::ServerContext* context, ::ycsbleveldb::ScanM* request, ::grpc::ServerAsyncResponseWriter< ::ycsbleveldb::ReadResult>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(1, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -280,7 +280,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -368,7 +368,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -463,18 +463,18 @@ class LevelDB final {
    public:
     WithStreamedUnaryMethod_Scan() {
       ::grpc::Service::MarkMethodStreamed(1,
-        new ::grpc::internal::StreamedUnaryHandler< ::ycsbleveldb::ScanM, ::ycsbleveldb::Result>(std::bind(&WithStreamedUnaryMethod_Scan<BaseClass>::StreamedScan, this, std::placeholders::_1, std::placeholders::_2)));
+        new ::grpc::internal::StreamedUnaryHandler< ::ycsbleveldb::ScanM, ::ycsbleveldb::ReadResult>(std::bind(&WithStreamedUnaryMethod_Scan<BaseClass>::StreamedScan, this, std::placeholders::_1, std::placeholders::_2)));
     }
     ~WithStreamedUnaryMethod_Scan() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedScan(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::ycsbleveldb::ScanM,::ycsbleveldb::Result>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedScan(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::ycsbleveldb::ScanM,::ycsbleveldb::ReadResult>* server_unary_streamer) = 0;
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Update : public BaseClass {

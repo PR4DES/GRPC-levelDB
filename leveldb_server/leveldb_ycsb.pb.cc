@@ -7,7 +7,6 @@
 
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
-#include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
@@ -19,6 +18,7 @@
 #include "third_party/protobuf/version.h"
 #endif
 // @@protoc_insertion_point(includes)
+
 namespace ycsbleveldb {
 class ReadMDefaultTypeInternal {
  public:
@@ -57,14 +57,9 @@ class ReadResultDefaultTypeInternal {
 } _ReadResult_default_instance_;
 }  // namespace ycsbleveldb
 namespace protobuf_leveldb_5fycsb_2eproto {
-void InitDefaultsReadMImpl() {
+static void InitDefaultsReadM() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_ReadM_default_instance_;
     new (ptr) ::ycsbleveldb::ReadM();
@@ -73,19 +68,12 @@ void InitDefaultsReadMImpl() {
   ::ycsbleveldb::ReadM::InitAsDefaultInstance();
 }
 
-void InitDefaultsReadM() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsReadMImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_ReadM =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsReadM}, {}};
 
-void InitDefaultsScanMImpl() {
+static void InitDefaultsScanM() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_ScanM_default_instance_;
     new (ptr) ::ycsbleveldb::ScanM();
@@ -94,19 +82,12 @@ void InitDefaultsScanMImpl() {
   ::ycsbleveldb::ScanM::InitAsDefaultInstance();
 }
 
-void InitDefaultsScanM() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsScanMImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_ScanM =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsScanM}, {}};
 
-void InitDefaultsUpdateMImpl() {
+static void InitDefaultsUpdateM() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_UpdateM_default_instance_;
     new (ptr) ::ycsbleveldb::UpdateM();
@@ -115,19 +96,12 @@ void InitDefaultsUpdateMImpl() {
   ::ycsbleveldb::UpdateM::InitAsDefaultInstance();
 }
 
-void InitDefaultsUpdateM() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsUpdateMImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_UpdateM =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsUpdateM}, {}};
 
-void InitDefaultsInsertMImpl() {
+static void InitDefaultsInsertM() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_InsertM_default_instance_;
     new (ptr) ::ycsbleveldb::InsertM();
@@ -136,19 +110,12 @@ void InitDefaultsInsertMImpl() {
   ::ycsbleveldb::InsertM::InitAsDefaultInstance();
 }
 
-void InitDefaultsInsertM() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsInsertMImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_InsertM =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsInsertM}, {}};
 
-void InitDefaultsDeleteMImpl() {
+static void InitDefaultsDeleteM() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_DeleteM_default_instance_;
     new (ptr) ::ycsbleveldb::DeleteM();
@@ -157,19 +124,12 @@ void InitDefaultsDeleteMImpl() {
   ::ycsbleveldb::DeleteM::InitAsDefaultInstance();
 }
 
-void InitDefaultsDeleteM() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsDeleteMImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_DeleteM =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsDeleteM}, {}};
 
-void InitDefaultsResultImpl() {
+static void InitDefaultsResult() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_Result_default_instance_;
     new (ptr) ::ycsbleveldb::Result();
@@ -178,19 +138,12 @@ void InitDefaultsResultImpl() {
   ::ycsbleveldb::Result::InitAsDefaultInstance();
 }
 
-void InitDefaultsResult() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsResultImpl);
-}
+::google::protobuf::internal::SCCInfo<0> scc_info_Result =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsResult}, {}};
 
-void InitDefaultsReadResultImpl() {
+static void InitDefaultsReadResult() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  ::google::protobuf::internal::InitProtobufDefaultsForceUnique();
-#else
-  ::google::protobuf::internal::InitProtobufDefaults();
-#endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
   {
     void* ptr = &::ycsbleveldb::_ReadResult_default_instance_;
     new (ptr) ::ycsbleveldb::ReadResult();
@@ -199,9 +152,17 @@ void InitDefaultsReadResultImpl() {
   ::ycsbleveldb::ReadResult::InitAsDefaultInstance();
 }
 
-void InitDefaultsReadResult() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &InitDefaultsReadResultImpl);
+::google::protobuf::internal::SCCInfo<0> scc_info_ReadResult =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsReadResult}, {}};
+
+void InitDefaults() {
+  ::google::protobuf::internal::InitSCC(&scc_info_ReadM.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ScanM.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_UpdateM.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_InsertM.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_DeleteM.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_Result.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ReadResult.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[7];
@@ -282,15 +243,14 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
-      "leveldb_ycsb.proto", schemas, file_default_instances, TableStruct::offsets, factory,
+      "leveldb_ycsb.proto", schemas, file_default_instances, TableStruct::offsets,
       file_level_metadata, NULL, NULL);
 }
 
 void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -311,25 +271,25 @@ void AddDescriptorsImpl() {
       "(\t\022\016\n\006values\030\003 \001(\t\"%\n\007DeleteM\022\r\n\005table\030\001"
       " \001(\t\022\013\n\003key\030\002 \001(\t\"\030\n\006Result\022\016\n\006result\030\001 "
       "\001(\005\",\n\nReadResult\022\016\n\006output\030\001 \001(\t\022\016\n\006res"
-      "ult\030\002 \001(\0052\231\002\n\007LevelDB\0225\n\004Read\022\022.ycsbleve"
-      "ldb.ReadM\032\027.ycsbleveldb.ReadResult\"\000\0221\n\004"
-      "Scan\022\022.ycsbleveldb.ScanM\032\023.ycsbleveldb.R"
-      "esult\"\000\0225\n\006Update\022\024.ycsbleveldb.UpdateM\032"
-      "\023.ycsbleveldb.Result\"\000\0225\n\006Insert\022\024.ycsbl"
-      "eveldb.InsertM\032\023.ycsbleveldb.Result\"\000\0226\n"
-      "\007Ldelete\022\024.ycsbleveldb.DeleteM\032\023.ycsblev"
-      "eldb.Result\"\000B/\n\031com.yahoo.ycsb.db.level"
-      "dbB\nYCSBLeveDBP\001\242\002\003LDBb\006proto3"
+      "ult\030\002 \001(\0052\235\002\n\007LevelDB\0225\n\004Read\022\022.ycsbleve"
+      "ldb.ReadM\032\027.ycsbleveldb.ReadResult\"\000\0225\n\004"
+      "Scan\022\022.ycsbleveldb.ScanM\032\027.ycsbleveldb.R"
+      "eadResult\"\000\0225\n\006Update\022\024.ycsbleveldb.Upda"
+      "teM\032\023.ycsbleveldb.Result\"\000\0225\n\006Insert\022\024.y"
+      "csbleveldb.InsertM\032\023.ycsbleveldb.Result\""
+      "\000\0226\n\007Ldelete\022\024.ycsbleveldb.DeleteM\032\023.ycs"
+      "bleveldb.Result\"\000B/\n\031com.yahoo.ycsb.db.l"
+      "eveldbB\nYCSBLeveDBP\001\242\002\003LDBb\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 710);
+      descriptor, 714);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "leveldb_ycsb.proto", &protobuf_RegisterTypes);
 }
 
 void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  static ::google::protobuf::internal::once_flag once;
+  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -351,16 +311,14 @@ const int ReadM::kKeyFieldNumber;
 
 ReadM::ReadM()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsReadM();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_ReadM.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.ReadM)
 }
 ReadM::ReadM(const ReadM& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.table().size() > 0) {
@@ -376,7 +334,6 @@ ReadM::ReadM(const ReadM& from)
 void ReadM::SharedCtor() {
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 ReadM::~ReadM() {
@@ -390,9 +347,7 @@ void ReadM::SharedDtor() {
 }
 
 void ReadM::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ReadM::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -400,17 +355,10 @@ const ::google::protobuf::Descriptor* ReadM::descriptor() {
 }
 
 const ReadM& ReadM::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsReadM();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_ReadM.base);
   return *internal_default_instance();
 }
 
-ReadM* ReadM::New(::google::protobuf::Arena* arena) const {
-  ReadM* n = new ReadM;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void ReadM::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.ReadM)
@@ -429,7 +377,7 @@ bool ReadM::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.ReadM)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -579,9 +527,7 @@ size_t ReadM::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -641,10 +587,11 @@ void ReadM::Swap(ReadM* other) {
 }
 void ReadM::InternalSwap(ReadM* other) {
   using std::swap;
-  table_.Swap(&other->table_);
-  key_.Swap(&other->key_);
+  table_.Swap(&other->table_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReadM::GetMetadata() const {
@@ -666,16 +613,14 @@ const int ScanM::kFieldFieldNumber;
 
 ScanM::ScanM()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsScanM();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_ScanM.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.ScanM)
 }
 ScanM::ScanM(const ScanM& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.table().size() > 0) {
@@ -698,7 +643,6 @@ void ScanM::SharedCtor() {
   startkey_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   field_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   recordcount_ = 0;
-  _cached_size_ = 0;
 }
 
 ScanM::~ScanM() {
@@ -713,9 +657,7 @@ void ScanM::SharedDtor() {
 }
 
 void ScanM::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ScanM::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -723,17 +665,10 @@ const ::google::protobuf::Descriptor* ScanM::descriptor() {
 }
 
 const ScanM& ScanM::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsScanM();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_ScanM.base);
   return *internal_default_instance();
 }
 
-ScanM* ScanM::New(::google::protobuf::Arena* arena) const {
-  ScanM* n = new ScanM;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void ScanM::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.ScanM)
@@ -754,7 +689,7 @@ bool ScanM::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.ScanM)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -979,9 +914,7 @@ size_t ScanM::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1048,12 +981,14 @@ void ScanM::Swap(ScanM* other) {
 }
 void ScanM::InternalSwap(ScanM* other) {
   using std::swap;
-  table_.Swap(&other->table_);
-  startkey_.Swap(&other->startkey_);
-  field_.Swap(&other->field_);
+  table_.Swap(&other->table_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  startkey_.Swap(&other->startkey_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  field_.Swap(&other->field_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(recordcount_, other->recordcount_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ScanM::GetMetadata() const {
@@ -1074,16 +1009,14 @@ const int UpdateM::kValuesFieldNumber;
 
 UpdateM::UpdateM()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsUpdateM();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_UpdateM.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.UpdateM)
 }
 UpdateM::UpdateM(const UpdateM& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.table().size() > 0) {
@@ -1104,7 +1037,6 @@ void UpdateM::SharedCtor() {
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   values_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 UpdateM::~UpdateM() {
@@ -1119,9 +1051,7 @@ void UpdateM::SharedDtor() {
 }
 
 void UpdateM::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* UpdateM::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1129,17 +1059,10 @@ const ::google::protobuf::Descriptor* UpdateM::descriptor() {
 }
 
 const UpdateM& UpdateM::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsUpdateM();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_UpdateM.base);
   return *internal_default_instance();
 }
 
-UpdateM* UpdateM::New(::google::protobuf::Arena* arena) const {
-  UpdateM* n = new UpdateM;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void UpdateM::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.UpdateM)
@@ -1159,7 +1082,7 @@ bool UpdateM::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.UpdateM)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1353,9 +1276,7 @@ size_t UpdateM::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1419,11 +1340,13 @@ void UpdateM::Swap(UpdateM* other) {
 }
 void UpdateM::InternalSwap(UpdateM* other) {
   using std::swap;
-  table_.Swap(&other->table_);
-  key_.Swap(&other->key_);
-  values_.Swap(&other->values_);
+  table_.Swap(&other->table_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  values_.Swap(&other->values_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata UpdateM::GetMetadata() const {
@@ -1444,16 +1367,14 @@ const int InsertM::kValuesFieldNumber;
 
 InsertM::InsertM()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsInsertM();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_InsertM.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.InsertM)
 }
 InsertM::InsertM(const InsertM& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.table().size() > 0) {
@@ -1474,7 +1395,6 @@ void InsertM::SharedCtor() {
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   values_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 InsertM::~InsertM() {
@@ -1489,9 +1409,7 @@ void InsertM::SharedDtor() {
 }
 
 void InsertM::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* InsertM::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1499,17 +1417,10 @@ const ::google::protobuf::Descriptor* InsertM::descriptor() {
 }
 
 const InsertM& InsertM::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsInsertM();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_InsertM.base);
   return *internal_default_instance();
 }
 
-InsertM* InsertM::New(::google::protobuf::Arena* arena) const {
-  InsertM* n = new InsertM;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void InsertM::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.InsertM)
@@ -1529,7 +1440,7 @@ bool InsertM::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.InsertM)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -1723,9 +1634,7 @@ size_t InsertM::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -1789,11 +1698,13 @@ void InsertM::Swap(InsertM* other) {
 }
 void InsertM::InternalSwap(InsertM* other) {
   using std::swap;
-  table_.Swap(&other->table_);
-  key_.Swap(&other->key_);
-  values_.Swap(&other->values_);
+  table_.Swap(&other->table_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  values_.Swap(&other->values_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata InsertM::GetMetadata() const {
@@ -1813,16 +1724,14 @@ const int DeleteM::kKeyFieldNumber;
 
 DeleteM::DeleteM()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsDeleteM();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_DeleteM.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.DeleteM)
 }
 DeleteM::DeleteM(const DeleteM& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.table().size() > 0) {
@@ -1838,7 +1747,6 @@ DeleteM::DeleteM(const DeleteM& from)
 void DeleteM::SharedCtor() {
   table_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   key_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  _cached_size_ = 0;
 }
 
 DeleteM::~DeleteM() {
@@ -1852,9 +1760,7 @@ void DeleteM::SharedDtor() {
 }
 
 void DeleteM::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* DeleteM::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -1862,17 +1768,10 @@ const ::google::protobuf::Descriptor* DeleteM::descriptor() {
 }
 
 const DeleteM& DeleteM::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsDeleteM();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_DeleteM.base);
   return *internal_default_instance();
 }
 
-DeleteM* DeleteM::New(::google::protobuf::Arena* arena) const {
-  DeleteM* n = new DeleteM;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void DeleteM::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.DeleteM)
@@ -1891,7 +1790,7 @@ bool DeleteM::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.DeleteM)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2041,9 +1940,7 @@ size_t DeleteM::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2103,10 +2000,11 @@ void DeleteM::Swap(DeleteM* other) {
 }
 void DeleteM::InternalSwap(DeleteM* other) {
   using std::swap;
-  table_.Swap(&other->table_);
-  key_.Swap(&other->key_);
+  table_.Swap(&other->table_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  key_.Swap(&other->key_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata DeleteM::GetMetadata() const {
@@ -2125,16 +2023,14 @@ const int Result::kResultFieldNumber;
 
 Result::Result()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsResult();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_Result.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.Result)
 }
 Result::Result(const Result& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   result_ = from.result_;
   // @@protoc_insertion_point(copy_constructor:ycsbleveldb.Result)
@@ -2142,7 +2038,6 @@ Result::Result(const Result& from)
 
 void Result::SharedCtor() {
   result_ = 0;
-  _cached_size_ = 0;
 }
 
 Result::~Result() {
@@ -2154,9 +2049,7 @@ void Result::SharedDtor() {
 }
 
 void Result::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* Result::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2164,17 +2057,10 @@ const ::google::protobuf::Descriptor* Result::descriptor() {
 }
 
 const Result& Result::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_Result.base);
   return *internal_default_instance();
 }
 
-Result* Result::New(::google::protobuf::Arena* arena) const {
-  Result* n = new Result;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void Result::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.Result)
@@ -2192,7 +2078,7 @@ bool Result::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.Result)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2285,9 +2171,7 @@ size_t Result::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2344,7 +2228,6 @@ void Result::InternalSwap(Result* other) {
   using std::swap;
   swap(result_, other->result_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata Result::GetMetadata() const {
@@ -2364,16 +2247,14 @@ const int ReadResult::kResultFieldNumber;
 
 ReadResult::ReadResult()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsReadResult();
-  }
+  ::google::protobuf::internal::InitSCC(
+      &protobuf_leveldb_5fycsb_2eproto::scc_info_ReadResult.base);
   SharedCtor();
   // @@protoc_insertion_point(constructor:ycsbleveldb.ReadResult)
 }
 ReadResult::ReadResult(const ReadResult& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _cached_size_(0) {
+      _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   output_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   if (from.output().size() > 0) {
@@ -2386,7 +2267,6 @@ ReadResult::ReadResult(const ReadResult& from)
 void ReadResult::SharedCtor() {
   output_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   result_ = 0;
-  _cached_size_ = 0;
 }
 
 ReadResult::~ReadResult() {
@@ -2399,9 +2279,7 @@ void ReadResult::SharedDtor() {
 }
 
 void ReadResult::SetCachedSize(int size) const {
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  _cached_size_.Set(size);
 }
 const ::google::protobuf::Descriptor* ReadResult::descriptor() {
   ::protobuf_leveldb_5fycsb_2eproto::protobuf_AssignDescriptorsOnce();
@@ -2409,17 +2287,10 @@ const ::google::protobuf::Descriptor* ReadResult::descriptor() {
 }
 
 const ReadResult& ReadResult::default_instance() {
-  ::protobuf_leveldb_5fycsb_2eproto::InitDefaultsReadResult();
+  ::google::protobuf::internal::InitSCC(&protobuf_leveldb_5fycsb_2eproto::scc_info_ReadResult.base);
   return *internal_default_instance();
 }
 
-ReadResult* ReadResult::New(::google::protobuf::Arena* arena) const {
-  ReadResult* n = new ReadResult;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
-}
 
 void ReadResult::Clear() {
 // @@protoc_insertion_point(message_clear_start:ycsbleveldb.ReadResult)
@@ -2438,7 +2309,7 @@ bool ReadResult::MergePartialFromCodedStream(
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ycsbleveldb.ReadResult)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
@@ -2575,9 +2446,7 @@ size_t ReadResult::ByteSizeLong() const {
   }
 
   int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
-  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
-  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  SetCachedSize(cached_size);
   return total_size;
 }
 
@@ -2636,10 +2505,10 @@ void ReadResult::Swap(ReadResult* other) {
 }
 void ReadResult::InternalSwap(ReadResult* other) {
   using std::swap;
-  output_.Swap(&other->output_);
+  output_.Swap(&other->output_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(result_, other->result_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
 }
 
 ::google::protobuf::Metadata ReadResult::GetMetadata() const {
@@ -2650,5 +2519,30 @@ void ReadResult::InternalSwap(ReadResult* other) {
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace ycsbleveldb
+namespace google {
+namespace protobuf {
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::ReadM* Arena::CreateMaybeMessage< ::ycsbleveldb::ReadM >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::ReadM >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::ScanM* Arena::CreateMaybeMessage< ::ycsbleveldb::ScanM >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::ScanM >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::UpdateM* Arena::CreateMaybeMessage< ::ycsbleveldb::UpdateM >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::UpdateM >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::InsertM* Arena::CreateMaybeMessage< ::ycsbleveldb::InsertM >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::InsertM >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::DeleteM* Arena::CreateMaybeMessage< ::ycsbleveldb::DeleteM >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::DeleteM >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::Result* Arena::CreateMaybeMessage< ::ycsbleveldb::Result >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::Result >(arena);
+}
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ycsbleveldb::ReadResult* Arena::CreateMaybeMessage< ::ycsbleveldb::ReadResult >(Arena* arena) {
+  return Arena::CreateInternal< ::ycsbleveldb::ReadResult >(arena);
+}
+}  // namespace protobuf
+}  // namespace google
 
 // @@protoc_insertion_point(global_scope)

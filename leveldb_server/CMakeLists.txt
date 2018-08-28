@@ -3,7 +3,6 @@ project(DB-server CXX)
 
 add_compile_options(
         -Wno-sign-compare
-        -std=c++17
         -O2
         -DNDEBUG
 )
@@ -48,7 +47,7 @@ add_custom_command(
 
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
-add_executable(leveldb_server leveldb_server.cc
+add_executable(leveldb_server leveldb_server.cc histogram.cc perf_log2.cc
         ${hw_proto_srcs}
         ${hw_grpc_srcs})
 target_link_libraries(leveldb_server

@@ -49,16 +49,16 @@ LevelDB::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel)
   return ::grpc::internal::ClientAsyncResponseReaderFactory< ::ycsbleveldb::ReadResult>::Create(channel_.get(), cq, rpcmethod_Read_, context, request, false);
 }
 
-::grpc::Status LevelDB::Stub::Scan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::ycsbleveldb::Result* response) {
+::grpc::Status LevelDB::Stub::Scan(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::ycsbleveldb::ReadResult* response) {
   return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_Scan_, context, request, response);
 }
 
-::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* LevelDB::Stub::AsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderFactory< ::ycsbleveldb::Result>::Create(channel_.get(), cq, rpcmethod_Scan_, context, request, true);
+::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>* LevelDB::Stub::AsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderFactory< ::ycsbleveldb::ReadResult>::Create(channel_.get(), cq, rpcmethod_Scan_, context, request, true);
 }
 
-::grpc::ClientAsyncResponseReader< ::ycsbleveldb::Result>* LevelDB::Stub::PrepareAsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderFactory< ::ycsbleveldb::Result>::Create(channel_.get(), cq, rpcmethod_Scan_, context, request, false);
+::grpc::ClientAsyncResponseReader< ::ycsbleveldb::ReadResult>* LevelDB::Stub::PrepareAsyncScanRaw(::grpc::ClientContext* context, const ::ycsbleveldb::ScanM& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderFactory< ::ycsbleveldb::ReadResult>::Create(channel_.get(), cq, rpcmethod_Scan_, context, request, false);
 }
 
 ::grpc::Status LevelDB::Stub::Update(::grpc::ClientContext* context, const ::ycsbleveldb::UpdateM& request, ::ycsbleveldb::Result* response) {
@@ -106,7 +106,7 @@ LevelDB::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       LevelDB_method_names[1],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< LevelDB::Service, ::ycsbleveldb::ScanM, ::ycsbleveldb::Result>(
+      new ::grpc::internal::RpcMethodHandler< LevelDB::Service, ::ycsbleveldb::ScanM, ::ycsbleveldb::ReadResult>(
           std::mem_fn(&LevelDB::Service::Scan), this)));
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       LevelDB_method_names[2],
@@ -135,7 +135,7 @@ LevelDB::Service::~Service() {
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
-::grpc::Status LevelDB::Service::Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) {
+::grpc::Status LevelDB::Service::Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::ReadResult* response) {
   (void) context;
   (void) request;
   (void) response;

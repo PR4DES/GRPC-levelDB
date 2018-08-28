@@ -10,11 +10,11 @@
 #include <grpc++/security/server_credentials.h>
 #include "leveldb_ycsb.grpc.pb.h"
 
-#include "perf_log.h"
+#include "perf_log2.h"
 #include <typeinfo>
 
 #include <leveldb/db.h>
-//#include <leveldb/util/perf_log.h>
+#include <leveldb/util/perf_log.h>
 #ifdef PMINDEXDB_BUILD
 #include <leveldb/persistant_pool.h>
 #endif
@@ -38,8 +38,10 @@ leveldb::DB *db;
 leveldb::Options options;
 leveldb::Status status;
 
+int notfound=0;
 int count;
 int count2;
+static int thread=4;
 
 uint64_t getMicrotime(){
 	struct timeval currentTime;
@@ -52,7 +54,6 @@ class ServerImpl final {
 		~ServerImpl() {
 			server_->Shutdown();
 			cq_->Shutdown();
-			std::cout << GetHistogram() << std::endl;
 		}
 		void Run() {
 			std::string server_address("0.0.0.0:30030");
@@ -89,10 +90,12 @@ class ServerImpl final {
 					std::string value = request_.values();
 		
 					leveldb::WriteOptions woptions;
-					uint64_t start_time = NowMicros();
+					uint64_t start_time = NowMicros2();
 					status = db->Put(woptions, key, value);
-					uint64_t micros = NowMicros()- start_time;
-					LogMicros(INSERT, micros);
+					uint64_t micros = NowMicros2()- start_time;
+					LogMicros2(INSERT, micros);
+
+					std::cout << "[INSERT]" << key << std::endl;
 
 					if(false == status.ok()) {
 						reply_.set_result(1);
@@ -135,10 +138,13 @@ class ServerImpl final {
 					std::string key = request_.key();
 					std::string output = "";
 
-					uint64_t start_time = getMicrotime();
+					uint64_t start_time = NowMicros2();
 					status = db->Get(leveldb::ReadOptions(), key, &output);
-					uint64_t micros = NowMicros()- start_time;
-					LogMicros(READ, micros);
+					uint64_t micros = NowMicros2()- start_time;
+					LogMicros2(READ, micros);
+					if(output=="") notfound++;
+					
+					std::cout << "[READ]" << key << std::endl;
 
 					if(false == status.ok()) {
 						reply_.set_result(1);
@@ -184,7 +190,7 @@ class ServerImpl final {
 					int recordcount = request_.recordcount();
 					std::string output = "";
 
-					uint64_t start_time = getMicrotime();
+					uint64_t start_time = NowMicros2();
 					leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
 					int i = 0;
 					for(it->Seek(key); it->Valid(); it->Next()) {
@@ -192,8 +198,8 @@ class ServerImpl final {
 						output.append(it->value().ToString());
 						i++;
 					}
-					uint64_t micros = NowMicros()- start_time;
-					LogMicros(SCAN, micros);
+					uint64_t micros = NowMicros2()- start_time;
+					LogMicros2(SCAN, micros);
 
 					reply_.set_result(0);
 					reply_.set_output(output);
@@ -234,10 +240,11 @@ class ServerImpl final {
 					std::string value = request_.values();
 
 					leveldb::WriteOptions woptions;
-					uint64_t start_time = getMicrotime();
+					uint64_t start_time = NowMicros2();
 					status = db->Put(woptions, key, value);
-					uint64_t micros = NowMicros()- start_time;
-					LogMicros(UPDATE, micros);
+					uint64_t micros = NowMicros2()- start_time;
+					LogMicros2(UPDATE, micros);
+					
 					if(false == status.ok()) {
 						reply_.set_result(1);
 					} else {
@@ -280,23 +287,27 @@ class ServerImpl final {
 					
 					if(key=="") {
 						count++;
-						count2++;
-						if(count>3) {
+						if(count>=thread) {
 							std::cout << "----" << std::endl;
-							std::cout << GetInfo() << std::endl;
-							ClearLogs();
+							std::cout << GetInfo2() << std::endl;
+							std::cout << "----" << std::endl;
+							std::cout << leveldb::benchmark::GetInfo() << std::endl;
+							std::cout << "READ NOTFOUND " << notfound << std::endl;
+							ClearLogs2();
 							count = 0;
-							if(count2>4) {
+							notfound=0;
+							count2++;
+							if(count2>=3) {
 								exit(0);
 							}
 						}
 						reply_.set_result(0);
 					} else {
 
-					uint64_t start_time = getMicrotime();
+					uint64_t start_time = NowMicros2();
 					status = db->Delete(leveldb::WriteOptions(), key);
-					uint64_t micros = NowMicros()- start_time;
-					LogMicros(DELETE, micros);
+					uint64_t micros = NowMicros2()- start_time;
+					LogMicros2(DELETE, micros);
 					if(false == status.ok()) {
 						reply_.set_result(1);
 					} else {
@@ -345,18 +356,20 @@ class ServerImpl final {
 };
 
 void Print10records() {
+	std::cout << "[PRINT DB]" << std::endl;
 	leveldb::Iterator* it = db->NewIterator(leveldb::ReadOptions());
+	it->SeekToFirst();
+	std::cout << "it->key() : " << it->key().ToString() << std::endl;
 	int i = 0;
 	for (it->SeekToFirst(); it->Valid(); it->Next()) {
 		std::cout << it->key().ToString() << " : " << it->value().ToString() << std::endl;
-		i++;
-		if(i==10) break;
 	}
 }
 
 
 int main(int argc, char** argv) {
-	CreatePerfLog();
+	leveldb::benchmark::CreatePerfLog();
+	CreatePerfLog2();
 	count=0;
 	count2=0;
 #ifdef PMINDEXDB_BUILD
@@ -381,6 +394,7 @@ int main(int argc, char** argv) {
 #ifdef PMINDEXDB_BUILD
 	leveldb::nvram::close_pool();
 #endif
-	ClosePerfLog();
+	ClosePerfLog2();
+	leveldb::benchmark::ClosePerfLog();
 	return 0;
 }
