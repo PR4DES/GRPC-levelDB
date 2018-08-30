@@ -6,6 +6,7 @@
 
 #include "leveldb_ycsb.pb.h"
 
+#include <grpcpp/impl/codegen/async_generic_service.h>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
 #include <grpcpp/impl/codegen/method_handler_impl.h>
@@ -161,7 +162,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) final override {
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -181,7 +182,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -201,7 +202,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -221,7 +222,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -241,7 +242,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -262,7 +263,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) final override {
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -279,7 +280,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -296,7 +297,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -313,7 +314,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -330,9 +331,109 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_Read : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithRawMethod_Read() {
+      ::grpc::Service::MarkMethodRaw(0);
+    }
+    ~WithRawMethod_Read() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestRead(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_Scan : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithRawMethod_Scan() {
+      ::grpc::Service::MarkMethodRaw(1);
+    }
+    ~WithRawMethod_Scan() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestScan(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(1, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_Update : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithRawMethod_Update() {
+      ::grpc::Service::MarkMethodRaw(2);
+    }
+    ~WithRawMethod_Update() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestUpdate(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(2, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_Insert : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithRawMethod_Insert() {
+      ::grpc::Service::MarkMethodRaw(3);
+    }
+    ~WithRawMethod_Insert() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestInsert(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(3, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_Ldelete : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    WithRawMethod_Ldelete() {
+      ::grpc::Service::MarkMethodRaw(4);
+    }
+    ~WithRawMethod_Ldelete() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestLdelete(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(4, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -348,7 +449,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) final override {
+    ::grpc::Status Read(::grpc::ServerContext* context, const ::ycsbleveldb::ReadM* request, ::ycsbleveldb::ReadResult* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -368,7 +469,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Scan(::grpc::ServerContext* context, const ::ycsbleveldb::ScanM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -388,7 +489,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Update(::grpc::ServerContext* context, const ::ycsbleveldb::UpdateM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -408,7 +509,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Insert(::grpc::ServerContext* context, const ::ycsbleveldb::InsertM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -428,7 +529,7 @@ class LevelDB final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) final override {
+    ::grpc::Status Ldelete(::grpc::ServerContext* context, const ::ycsbleveldb::DeleteM* request, ::ycsbleveldb::Result* response) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
