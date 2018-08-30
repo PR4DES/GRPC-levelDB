@@ -1,12 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(DB-server CXX)
 
-add_compile_options(
-        -Wno-sign-compare
-        -std=c++17
-        -O2
-        -DNDEBUG
-)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O2 -DNDEBUG -Wno-sign-compare")
 
 set(PMINDEXDB_BUILD TRUE)
 
