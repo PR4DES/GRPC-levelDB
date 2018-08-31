@@ -238,17 +238,24 @@ class ServerImpl final {
 					new UpdateCallData(service_, cq_);
 					std::string key = request_.key();
 					std::string value = request_.values();
+					std::string output="";
 
 					leveldb::WriteOptions woptions;
 					uint64_t start_time = NowMicros2();
-					status = db->Put(woptions, key, value);
-					uint64_t micros = NowMicros2()- start_time;
+					status = db->Get(leveldb::ReadOptions(), key, &output);
+					if(output != "") {
+						status = db->Put(woptions, key, value);
+						uint64_t micros = NowMicros2()- start_time;
+					}
 					LogMicros2(UPDATE, micros);
-					
-					if(false == status.ok()) {
-						reply_.set_result(1);
-					} else {
-						reply_.set_result(0);
+					if(output=="") {
+						reply_.set_result(2);
+					} else {	
+						if(false == status.ok()) {
+							reply_.set_result(1);
+						} else {
+							reply_.set_result(0);
+						}
 					}
 
 					status_ = FINISH;
